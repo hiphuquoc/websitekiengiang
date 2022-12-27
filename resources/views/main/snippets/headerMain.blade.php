@@ -1,7 +1,7 @@
 <div class="headerMain">
    <div class="container">
       <div class="headerMain_logo">
-         <a href="/" class="logoMain">
+         <a href="/" class="logoMain" aria-label="Trang chủ thiết kế Website Kiên Giang">
                <h1 style="display:none;">Trang chủ Thiết kế Website Kiên Giang</h1>
          </a>
       </div>
@@ -10,7 +10,7 @@
          <ul style="justify-content:flex-end;">
             <li>
                <div>
-                  <a href="/" class="active" title="thiết kế website kiên giang">Thiết kế Website</a>
+                  <a href="/" class="active" title="thiết kế website kiên giang" aria-label="Thiết kế Website Kiên Giang">Thiết kế Website</a>
                </div>
             </li>
             {{-- <li>
