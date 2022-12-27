@@ -50,7 +50,7 @@
 @endpush
 @section('content')
     <div style="overflow: hidden;">
-        @include('main.home.slider')
+        @include('main.home.slide')
         <div id="js_buildTocContentSidebar_element">
             <!-- Về chúng tôi -->
             <div class="sectionBox">
