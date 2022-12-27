@@ -68,5 +68,8 @@ return [
         'https://twitter.com/websitekiengiang',
         'https://pinterest.com/websitekiengiang',
         'https://youtube.com/websitekiengiang'
-    ]
+    ],
+    'company_name'      => '',
+    'company_name_en'   => 'Higroup Inc',
+
 ];

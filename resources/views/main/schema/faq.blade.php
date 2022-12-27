@@ -10,10 +10,10 @@
                     @endif
                     {
                         "@type": "Question",
-                        "name": "{!! $faq->question ?? null !!}",
+                        "name": "{{ $faq->question ?? null }}",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "{!! $faq->answer ?? null !!}"
+                            "text": "{{ $faq->answer ?? null }}"
                         }
                     }
                 @endforeach

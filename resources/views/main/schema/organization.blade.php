@@ -1,52 +1,47 @@
 <script type="application/ld+json">
     {
-        "@context": "http://schema.org",
+        "@context": "https://schema.org",
         "@type": "Organization",
-        "url": "https://hitour.vn",
-        "logo": "{{ config('info.logo') }}",
-        "image": "{{ config('info.image') }}",
+        "name": "{{ config('info.company_name_en') }}",
         "description": "{{ config('info.description') }}",
         "founder": "{{ config('info.founder') }}",
+        "foundingDate": "{{ date('c', strtotime('2022-12-28')) }}",
         "address": "{{ config('info.address_founder') }}",
-        "contactPoint":
-            [
+        "url": "http://www.acmeinc.com",
+        "logo": "{{ config('info.logo') }}",
+        "contactPoint": [
+            @foreach(config('info.contacts') as $contact)
+                @if($loop->index!=0) 
+                    ,
+                @endif
                 {
                     "@type": "ContactPoint",
-                    "telephone": "(+84 8) 6868 4868",
-                    "email": "mailto:hiphuquoc@gmail.com",
-                    "contactPoint": [
-                        @foreach(config('info.contacts') as $contact)
-                            @if($loop->index!=0) 
-                                ,
-                            @endif
-                            {
-                                "@type": "ContactPoint",
-                                "telephone": "{{ $contact['phone'] }}",
-                                "contactType": "{{ $contact['type'] }}"
-                            }
-                        @endforeach
-                    ]
-                    "productSupported": [
-                        @foreach(config('info.products') as $product)
-                            @if($loop->index!=0) 
-                                ,
-                            @endif
-                            {
-                                "@type": "{{ $product['type'] }}",
-                                "name": "{{ $product['product'] }}"
-                            }
-                        @endforeach
-                    ]
+                    "telephone": "{{ $contact['phone'] }}",
+                    "contactType": "{{ $contact['type'] }}",
+                    "areaServed": ["VN"],
+                    "availableLanguage": ["Vietnamese"]
                 }
-            ],
-        "sameAs": 
-            [
-                @foreach(config('info.socials') as $social)
-                    @if($loop->index!=0) 
-                        ,
-                    @endif
-                    {{ $social }}
-                @endforeach
-            ]
-    }
+            @endforeach
+        ],
+
+        {{-- "productSupported": [{
+            "@type": "Product",
+            "name": "Thiết Kế Website Chuyên Nghiệp",
+            "description": "Dịch vụ thiết kế website chuyên nghiệp tại Kiên Giang, giúp doanh nghiệp tối ưu hóa hiệu quả kinh doanh trực tuyến và xây dựng thương hiệu 4.0 thành công.",
+            "sku": "TKW-001",
+            "brand": {
+              "@type": "Brand",
+              "name": "Thiết Kế Website Kiên Giang"
+            }
+        }], --}}
+
+        "sameAs": [
+            @foreach(config('info.socials') as $social)
+                @if($loop->index!=0) 
+                    ,
+                @endif
+                "{{ $social }}"
+            @endforeach
+        ]
+      }
 </script>

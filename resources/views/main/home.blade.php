@@ -20,8 +20,8 @@
 
 <!-- STRAT:: Product Schema -->
 @php
-    $highPrice  = 14250000;
-    $lowPrice   = 100000000;
+    $lowPrice   = 14250000;
+    $highPrice  = 100000000;
 @endphp
 @include('main.schema.product', ['data' => $item, 'lowPrice' => $lowPrice, 'highPrice' => $highPrice])
 <!-- END:: Product Schema -->
