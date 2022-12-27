@@ -1,5 +1,51 @@
 @extends('layouts.main')
 @push('headCustom')
+<!-- ===== START:: SCHEMA ===== -->
+<!-- STRAT:: Title - Description - Social -->
+@include('main.schema.social', ['data' => $item])
+<!-- END:: Title - Description - Social -->
+
+<!-- STRAT:: Organization Schema -->
+@include('main.schema.organization')
+<!-- END:: Organization Schema -->
+
+
+<!-- STRAT:: Article Schema -->
+@include('main.schema.article', ['data' => $item])
+<!-- END:: Article Schema -->
+
+<!-- STRAT:: Article Schema -->
+@include('main.schema.creativeworkseries', ['data' => $item])
+<!-- END:: Article Schema -->
+
+<!-- STRAT:: Product Schema -->
+@php
+    $highPrice  = 14250000;
+    $lowPrice   = 100000000;
+@endphp
+@include('main.schema.product', ['data' => $item, 'lowPrice' => $lowPrice, 'highPrice' => $highPrice])
+<!-- END:: Product Schema -->
+
+{{-- <!-- STRAT:: Article Schema -->
+@include('main.schema.breadcrumb', ['data' => $breadcrumb])
+<!-- END:: Article Schema --> --}}
+
+<!-- STRAT:: FAQ Schema -->
+@include('main.schema.faq', ['data' => $faqs])
+<!-- END:: FAQ Schema -->
+
+{{-- @php
+    $dataList           = new \Illuminate\Support\Collection();
+    if(!empty($item->tours)&&$item->tours->isNotEmpty()){
+        foreach($item->tours as $tour){
+            $dataList[] = $tour->infoTour;
+        }
+    }
+@endphp
+<!-- STRAT:: Article Schema -->
+@include('main.schema.itemlist', ['data' => $dataList])
+<!-- END:: Article Schema --> --}}
+
 <!-- ===== END:: SCHEMA ===== -->
 @endpush
 @section('content')

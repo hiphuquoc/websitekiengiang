@@ -3,10 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Seo;
+use App\Models\Faq;
 
 class HomeController extends Controller {
     public static function home(){
-        return view('main.home');
+        $item   = Seo::select('*')
+                    ->where('type', 'home')
+                    ->first();
+        $faqs   = Faq::all();
+        return view('main.home', compact('item', 'faqs'));
     }
 
     public function buildTocContentMain(Request $request){
