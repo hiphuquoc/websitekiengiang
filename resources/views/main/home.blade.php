@@ -60,7 +60,7 @@
             </div>
             
             <!-- Nên chọn website chất lượng hay giá rẻ -->
-            <div class="sectionBox" style="background: linear-gradient(245deg, #EDF2F7 55%, #ffffd1 5%);">
+            <div class="sectionBox backgroundGradient">
                 <div class="container">
                     @include('main.home.aboutQuanlity')
                 </div>
@@ -107,7 +107,7 @@
             </div>
             <!-- Câu hỏi thường gặp -->
             <div class="sectionBox">
-                @include('main.home.faq')
+                @include('main.home.faq', compact('faqs'))
             </div>
             {{-- <!-- Nội dung -->
             <div class="sectionBox withBorder">

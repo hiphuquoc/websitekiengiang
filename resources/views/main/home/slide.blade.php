@@ -38,7 +38,7 @@
                                 +200
                             </div>
                             <div class="aboutUsSortBox_item_text">
-                                khách hàng tại Kiên Giang
+                                khách hàng thân thiết
                             </div>
                         </div>
                 </div>

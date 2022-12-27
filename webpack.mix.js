@@ -18,6 +18,5 @@ const mix = require('laravel-mix');
 // mix.copy('resources/sources/admin/app-assets', 'public/sources/admin/app-assets');
 mix.copy('resources/images', 'public/images');
 mix.copy('resources/fonts', 'public/fonts');
-mix.copy('resources/videos', 'public/videos');
 mix.sass('resources/css/style.scss', 'public/css')
     .version();

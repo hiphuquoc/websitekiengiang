@@ -608,6 +608,10 @@ blockquote em {
   }
 }
 @media (max-width: 766px) {
+  .slideBox {
+    height: 650px;
+    background: linear-gradient(245deg, rgb(6, 154, 142) 45%, rgb(0, 85, 85) 5%);
+  }
   .slideBox_body_left h2, .slideBox_body_left h3 {
     font-size: 2.4rem;
     line-height: 3.3rem;
@@ -616,6 +620,9 @@ blockquote em {
   .slideBox_body_left_desc {
     font-size: 1.05rem;
     line-height: 2rem;
+  }
+  .slideBox_video {
+    display: none !important;
   }
 }
 @media (max-width: 577px) {
@@ -696,6 +703,14 @@ blockquote em {
   top: 0;
   left: 0;
 }
+.sectionBox.backgroundGradient {
+  background: linear-gradient(245deg, #EDF2F7 55%, #ffffd1 5%);
+}
+@media (max-width: 766px) {
+  .sectionBox.backgroundGradient {
+    background: #ffffd1;
+  }
+}
 @media (max-width: 990px) {
   .sectionBox {
     padding: 3rem 0 3.5rem 0;
@@ -764,12 +779,18 @@ blockquote em {
   }
 }
 @media (max-width: 990px) {
+  .aboutUsBox {
+    padding: 1.25rem;
+  }
   .aboutUsBox img {
     width: 250px;
     top: -90px;
   }
 }
 @media (max-width: 766px) {
+  .aboutUsBox {
+    padding: 1rem;
+  }
   .aboutUsBox img {
     width: 200px;
     top: -60px;
@@ -818,7 +839,7 @@ blockquote em {
   letter-spacing: 0.5px;
 }
 .aboutUsSortBox_item_text {
-  margin-top: 7px;
+  margin-top: 5px;
   font-size: 1.2rem;
 }
 @media (max-width: 1199px) {
