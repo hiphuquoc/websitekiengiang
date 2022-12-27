@@ -4,6 +4,8 @@ deployment:
     # - export DEPLOYPATH=/home/rhawgejx/chophuquoc.net/
     - export DEPLOYPATH=/home/rhawgejx/websitekiengiang.com/
     - /bin/cp -R * $DEPLOYPATH
+    - export DEPLOYPATH=/home/rhawgejx/websitesoctrang.com/
+    - /bin/cp -R * $DEPLOYPATH
     # - /bin/cp /app $DEPLOYPATH
     # - /bin/cp /bootstrap $DEPLOYPATH
     # - /bin/cp /config $DEPLOYPATH
