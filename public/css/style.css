@@ -192,19 +192,46 @@ blockquote em {
 
 .button {
   padding: 0.5rem 1.5rem;
-  background: #069A8E;
+  background: rgba(6, 154, 142, 0.75);
   display: inline-block;
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-weight: 500;
+  font-family: "Montserrat Alternates", "mt", "SVN-Gilroy Bold", serif;
+  font-weight: 600;
   color: #fff;
   border-radius: 10px;
   cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 }
-.button:hover {
-  background: #005555;
+.button:focus, .button:hover {
+  outline: none;
+  background: #069A8E;
+}
+.button.cancel {
+  background: #dee2e6;
+  color: #345;
+}
+.button.cancel:hover {
+  outline: none;
+  background: #ced4da;
+}
+
+input, textarea, select {
+  padding: 0.7rem 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-family: "Montserrat Alternates", "mt", "SVN-Gilroy Bold", serif;
+  border-radius: 7px;
+  border: 1px solid #ced4da;
+}
+input:focus, textarea:focus, select:focus {
+  border: 1px solid #069A8E;
+  outline: none;
+}
+
+label.required:after {
+  content: "*";
+  color: red;
+  font-size: 1.1rem;
+  margin-left: 0.25rem;
 }
 
 .maxLine_1, .maxLine_2, .maxLine_3, .maxLine_4, .maxLine_5 {
@@ -2558,4 +2585,52 @@ blockquote em {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.formBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formBox_box {
+  width: 700px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+}
+.formBox_box_head {
+  border-bottom: 1px solid #ced4da;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.formBox_box_body {
+  margin-bottom: 1.5rem;
+}
+.formBox_box_body_item {
+  display: flex;
+  align-items: center;
+}
+.formBox_box_body_item label {
+  flex: 0 0 150px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.formBox_box_body_item:not(:first-child) {
+  margin-top: 1.5rem;
+}
+.formBox_box_footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.formBox_box_footer_item:not(:first-child) {
+  margin-left: 1rem;
 }

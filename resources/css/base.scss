@@ -227,18 +227,49 @@ blockquote{
 
 .button {
   padding: 0.5rem 1.5rem;
-  background: $colorLv2;
+  background: rgba(6,154,142,0.75);
   display: inline-block;
-  font-family: $fontTitle;
-  font-weight: 500;
+  font-family: $fontText;
+  font-weight: 600;
   color: #fff;
   border-radius: 10px;
   cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1.4rem;
-  &:hover {
-    background: $colorLv1;
+  font-size: 1.1rem;
+  &:focus, &:hover {
+    outline: none;
+    background: $colorLv2;
+  }
+  &.cancel {
+    background: $bg-04;
+    color: $colorText;
+    &:hover {
+      outline: none;
+      background: $bg-05;
+    }
+  }
+}
+
+input, textarea, select {
+  padding: 0.7rem 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-family: $fontText;
+  border-radius: 7px;
+  border: 1px solid $bg-05;
+  &:focus {
+    border: 1px solid $colorLv2;
+    outline: none;
+  }
+}
+
+label {
+  &.required {
+    &:after {
+      content: '*';
+      color: red;
+      font-size: 1.1rem;
+      margin-left: 0.25rem;
+    }
   }
 }
 
