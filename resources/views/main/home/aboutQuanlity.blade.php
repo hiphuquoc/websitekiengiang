@@ -1,7 +1,7 @@
 <div class="aboutQuanlityBox">
     <div class="aboutQuanlityBox_image">
-        <img class="effectFadeIn" src="/images/about-quanlity-1.png" alt="thiết kế website chuẩn seo kiên giang" title="thiết kế website chuẩn seo kiên giang" />
-        <img class="format effectDropdown" src="/images/quanlity-100-red.png" alt="thiết kế website chuẩn seo kiên giang" title="thiết kế website chuẩn seo kiên giang" />
+        <img class="effectFadeIn" src="/images/about-quanlity-1.png" alt="thiết kế website chất lượng {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website chất lượng {{ ucwords(env('LOCAL_VN')) }}" />
+        <img class="format effectDropdown" src="/images/quanlity-100-red.png" alt="thiết kế website chất lượng {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website chất lượng {{ ucwords(env('LOCAL_VN')) }}" />
     </div>
     <div class="aboutQuanlityBox_content">
         <div class="aboutQuanlityBox_content_title">

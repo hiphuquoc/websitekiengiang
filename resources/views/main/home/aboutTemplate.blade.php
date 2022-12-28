@@ -17,7 +17,7 @@
         </div>  
     </div>
     <div class="aboutTemplateBox_image">
-        <img class="effectFadeIn" src="/images/about-template-1.png" alt="thiết kế website chuẩn seo kiên giang" title="thiết kế website chuẩn seo kiên giang" />
-        <img class="format effectDropdown" src="/images/about-template-2.png" alt="thiết kế website chuẩn seo kiên giang" title="thiết kế website chuẩn seo kiên giang" />
+        <img class="effectFadeIn" src="/images/about-template-1.png" alt="thiết kế website tốc độ cao {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website tốc độ cao {{ ucwords(env('LOCAL_VN')) }}" />
+        <img class="format effectDropdown" src="/images/about-template-2.png" alt="thiết kế website tốc độ cao {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website tốc độ cao {{ ucwords(env('LOCAL_VN')) }}" />
     </div>
 </div>

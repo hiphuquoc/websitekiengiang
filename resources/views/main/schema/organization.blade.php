@@ -1,9 +1,12 @@
+@php
+    use \App\Helpers\Words;
+@endphp
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "{{ config('info.company_name_en') }}",
-        "description": "{{ config('info.description') }}",
+        "description": "{{ Words::convertLocal(config('info.description')) }}",
         "founder": "{{ config('info.founder') }}",
         "foundingDate": "{{ date('c', strtotime('2022-12-28')) }}",
         "address": "{{ config('info.address_founder') }}",
@@ -40,7 +43,7 @@
                 @if($loop->index!=0) 
                     ,
                 @endif
-                "{{ $social }}"
+                "{{ Words::convertLocal($social) }}"
             @endforeach
         ]
       }

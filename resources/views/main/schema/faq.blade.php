@@ -1,3 +1,6 @@
+@php
+    use \App\Helpers\Words;
+@endphp
 @if(!empty($data)&&$data->isNotEmpty())
     <script type="application/ld+json">
         {
@@ -10,10 +13,10 @@
                     @endif
                     {
                         "@type": "Question",
-                        "name": "{{ $faq->question ?? null }}",
+                        "name": "{{ Words::convertLocal($faq->question) }}",
                         "acceptedAnswer": {
                             "@type": "Answer",
-                            "text": "{{ $faq->answer ?? null }}"
+                            "text": "{{ Words::convertLocal($faq->answer) }}"
                         }
                     }
                 @endforeach

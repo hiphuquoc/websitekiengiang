@@ -1,17 +1,31 @@
 <script type="application/ld+json">
     @php
-     
+        use \App\Helpers\Words;
+
+        /* title */
+        $title          = null;
+        if(!empty($data->title)) $title = Words::convertLocal($data->title);
+        if(!empty($data->seo_title)) $title = Words::convertLocal($data->seo_title);
+
+        /* description */
+        $description    = null;
+        if(!empty($data->description)) $description = Words::convertLocal($data->description);
+        if(!empty($data->seo_description)) $description = Words::convertLocal($data->seo_description);
+
+        /* author */
+        $author         = null;
+        if(!empty($data->rating_author_name)) $author = Words::convertLocal($data->rating_author_name);
     @endphp
     {
         "@context": "https://schema.org",
         "@type": "Article",
         "@id": "{{ URL::current() }}#website",
         "inLanguage": "vi",
-        "headline": "{{ $data->rating_author_name ?? null }} Article",
+        "headline": "{{ $author }} Article",
         "datePublished": "{{ !empty($data->created_at) ? date('c', strtotime($data->created_at)) : null }}",
         "dateModified": "{{ !empty($data->updated_at) ? date('c', strtotime($data->updated_at)) : null }}",
-        "name": "{{ $data->seo_title ?? $data->title ?? null }}",
-        "description": "{{ $data->seo_description ?? $data->description ?? null }}",
+        "name": "{{ $title }}",
+        "description": "{{ $description }}",
         "url": "{{ URL::current() }}",
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -19,7 +33,7 @@
         },
         "author":{
             "@type": "Person",
-            "name": "{{ $data->rating_author_name ?? null }}"
+            "name": "{{ $author }}"
         },
         "image":{
             "@type": "ImageObject",
@@ -29,7 +43,7 @@
         },
         "publisher": {
             "@type": "Organization",
-            "name": "{{ $data->rating_author_name ?? null }}",
+            "name": "{{ $author }}",
             "logo": {
                 "@type": "ImageObject",
                 "url": "{{ config('info.logo') }}",

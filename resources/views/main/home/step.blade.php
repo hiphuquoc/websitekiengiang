@@ -42,7 +42,7 @@
 <div class="container">
     <div class="stepByStepBox_head">
         <h2>Quy trình thiết kế Website</h2>
-        <div class="stepByStepBox_head_desc">Quy trình làm việc và tương tác khách hàng của Thiết kế Website Kiên Giang</div>
+        <div class="stepByStepBox_head_desc">Quy trình làm việc và tương tác khách hàng của Thiết kế Website {{ ucwords(env('LOCAL_VN')) }}</div>
     </div>
     <div class="stepByStepBox_body">
         <!-- Desktop -->

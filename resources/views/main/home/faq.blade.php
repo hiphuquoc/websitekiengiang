@@ -1,3 +1,7 @@
+@php
+    use \App\Helpers\Words;
+@endphp
+
 <div class="faqBox">
     <div class="container">
         <div class="faqBox_head">
@@ -7,8 +11,8 @@
         <div class="faqBox_body effectFadeIn">
             @foreach($faqs as $faq)
                 <div class="faqBox_body_item">
-                    <h3 class="faqBox_body_item_question">{!! $faq['question'] !!}</h3>
-                    <div class="faqBox_body_item_answer" style="display:none;">{!! $faq['answer'] !!}</div>
+                    <h3 class="faqBox_body_item_question">{!! Words::convertLocal($faq['question']) !!}</h3>
+                    <div class="faqBox_body_item_answer" style="display:none;">{!! Words::convertLocal($faq['answer']) !!}</div>
                 </div>
             @endforeach
         </div>

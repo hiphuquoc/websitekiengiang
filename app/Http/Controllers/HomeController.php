@@ -12,7 +12,7 @@ class HomeController extends Controller {
                     ->where('type', 'home')
                     ->first();
         $faqs   = Faq::all();
-        return view('main.home', compact('item', 'faqs'));
+        return view('main.home.index', compact('item', 'faqs'));
     }
 
     public function buildTocContentMain(Request $request){
