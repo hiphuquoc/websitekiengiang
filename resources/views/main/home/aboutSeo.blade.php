@@ -2,7 +2,7 @@
     <div class="aboutSeoBox_image">
         <img class="effectLeftToRight" src="/images/about-seo-1.jpg" alt="thiết kế website chuẩn seo kiên giang" title="thiết kế website chuẩn seo kiên giang" />
     </div>
-    <div class="aboutSeoBox_content">
+    <div class="aboutSeoBox_content effectFadeIn">
         <div class="aboutSeoBox_content_title">
             <h2>Lợi thế của Website chuẩn Seo?</h2>
         </div>

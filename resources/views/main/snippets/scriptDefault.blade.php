@@ -218,11 +218,12 @@
         }
     }
     function smoothScrollToTop() {
-        const currentScroll = document.documentElement.scrollTop;
-        if (currentScroll > 0) {
-            window.requestAnimationFrame(smoothScrollToTop);
-            window.scrollTo(0, currentScroll - currentScroll / 8);
-        }
+        // const currentScroll = document.documentElement.scrollTop;
+        // if (currentScroll > 0) {
+        //     window.requestAnimationFrame(smoothScrollToTop);
+        //     window.scrollTo(0, currentScroll - currentScroll / 8);
+        // }
+        document.documentElement.scrollTop          = 0;
     }
     /* link to a href #id smooth */
     document.querySelectorAll('a[href^="#"]').forEach(function(a) {

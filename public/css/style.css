@@ -223,7 +223,7 @@ input, textarea, select {
   border: 1px solid #ced4da;
 }
 input:focus, textarea:focus, select:focus {
-  border: 1px solid #069A8E;
+  border: 1px solid #adb5bd;
   outline: none;
 }
 
@@ -2587,50 +2587,89 @@ label.required:after {
   justify-content: flex-end;
 }
 
-.formBox {
+.formModalBox {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
   z-index: 999999;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
-.formBox_box {
-  width: 700px;
+.formModalBox_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.formModalBox_box {
+  max-width: 700px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
   background: #fff;
   border-radius: 10px;
   padding: 1rem 1.5rem;
+  z-index: 1;
+  position: relative;
 }
-.formBox_box_head {
-  border-bottom: 1px solid #ced4da;
+.formModalBox_box_head {
   padding-bottom: 0.75rem;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
   font-weight: bold;
 }
-.formBox_box_body {
+.formModalBox_box_body {
   margin-bottom: 1.5rem;
 }
-.formBox_box_body_item {
+.formModalBox_box_body_item {
   display: flex;
   align-items: center;
 }
-.formBox_box_body_item label {
+.formModalBox_box_body_item label {
   flex: 0 0 150px;
   font-weight: 600;
   font-size: 0.95rem;
 }
-.formBox_box_body_item:not(:first-child) {
+.formModalBox_box_body_item:not(:first-child) {
   margin-top: 1.5rem;
 }
-.formBox_box_footer {
+.formModalBox_box_footer {
   display: flex;
   justify-content: flex-end;
+  padding-top: 1rem;
 }
-.formBox_box_footer_item:not(:first-child) {
+.formModalBox_box_footer_item:not(:first-child) {
   margin-left: 1rem;
+}
+.formModalBox_box .icon {
+  width: 90px;
+  position: absolute;
+  top: -2rem;
+  right: -1.5rem;
+  padding: 10px;
+  border-radius: 50%;
+  transform: rotate(7deg);
+}
+@media (max-width: 577px) {
+  .formModalBox_box_head {
+    margin-bottom: 0.5rem;
+  }
+  .formModalBox_box_body {
+    margin-bottom: 1rem;
+  }
+  .formModalBox_box_body_item {
+    flex-wrap: wrap;
+  }
+  .formModalBox_box_body_item > * {
+    flex: 0 0 unset;
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .formModalBox_box_body_item:not(:first-child) {
+    margin-top: 1rem;
+  }
 }

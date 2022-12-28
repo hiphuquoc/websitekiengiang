@@ -7,15 +7,17 @@
             <h2>Website dễ quản trị và mở rộng</h2>
         </div>
         <div class="aboutExplainBox_content_text">
-            <h3>Dễ dàng quản trị</h3>
-            <div><strong>Thiết kế Website Kiên Giang</strong> không chỉ cung cấp cho bạn những sản phẩm dễ quản trị, mà còn có hướng dẫn sử dụng chi tiết cho mỗi sản phẩm. Trong quá trình bàn giao, bạn sẽ được hướng dẫn cụ thể về các tính năng và thao tác trong hệ thống. Để bạn có thể sử dụng Website một cách hiệu quả, dễ dàng và lâu dài.</div>
+            <div class="effectFadeIn">
+                <h3>Dễ dàng quản trị</h3>
+                <div><strong>Thiết kế Website Kiên Giang</strong> không chỉ cung cấp cho bạn những sản phẩm dễ quản trị, mà còn có hướng dẫn sử dụng chi tiết cho mỗi sản phẩm. Trong quá trình bàn giao, bạn sẽ được hướng dẫn cụ thể về các tính năng và thao tác trong hệ thống. Để bạn có thể sử dụng Website một cách hiệu quả, dễ dàng và lâu dài.</div>
+            </div>
             <p></p>
             <div class="aboutExplainBox_content_text_column">
                 <div class="aboutExplainBox_content_text_column_image">
                     <img class="effectLeftToRight" src="/images/about-expland-1.jpg" alt="thiết kế Website chuẩn seo kiên giang" title="thiết kế Website chuẩn seo kiên giang" />
                     {{-- <img class="custom" src="/images/icon-quanlity.png" alt="thiết kế Website chuẩn seo kiên giang" title="thiết kế Website chuẩn seo kiên giang" style="box-shadow:none;" /> --}}
                 </div>
-                <div class="aboutExplainBox_content_text_column_text">
+                <div class="aboutExplainBox_content_text_column_text effectBottomToTop">
                     <h3>Dễ dàng phát triển thêm các tính năng nếu cần thiết</h3>
                     <div>Trong tương lai, bạn có thể có nhiều ý tưởng mới hay ho đòi hỏi thêm nhiều tính năng mới cho Website.</div>
                     <div>Vì vậy, khả năng mở rộng là một yếu tố không thể thiếu cho một <strong>Website chuyên nghiệp</strong>. Để bạn có thể thêm những tính năng mới mà không phải xây dựng lại toàn bộ Website từ đầu.</div>

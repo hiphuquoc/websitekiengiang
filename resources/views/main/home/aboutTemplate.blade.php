@@ -1,6 +1,6 @@
 <div class="aboutTemplateBox">
     
-    <div class="aboutTemplateBox_content">
+    <div class="aboutTemplateBox_content effectFadeIn">
         <div class="aboutTemplateBox_content_title">
             <h2>Giao diện đẹp - chuẩn thiết kế Ux/Ui có ý nghĩa như thế nào?</h2>
         </div>

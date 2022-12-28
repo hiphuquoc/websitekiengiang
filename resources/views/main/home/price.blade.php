@@ -21,7 +21,8 @@
                 'Cài đặt Google Console và hướng dẫn sử dụng (Seo Google)',
                 'Bàn giao toàn bộ source code và Hỗ trợ <span class="highLight">backup hàng tháng</span>',
                 'Bảo hành - bảo trì trọn đời'
-            ]
+            ],
+            'valueSelected' => 1
         ],
         1 => [
             'name'          => 'combo2',
@@ -46,7 +47,8 @@
                 'Bảo hành - bảo trì trọn đời',
                 'Hỗ trợ nghiên cứu từ khóa và Tư vấn quảng bá Website',
                 'Hỗ trợ cài đặt quảng cáo Google/Facebook theo bộ từ khóa và hướng dẫn sử dụng'
-            ]
+            ],
+            'valueSelected' => 2
         ],
         2 => [
             'name'          => 'combo3',
@@ -72,7 +74,8 @@
                 'Hỗ trợ nghiên cứu từ khóa và Tư vấn quảng bá Website',
                 'Hỗ trợ cài đặt quảng cáo Google/Facebook theo bộ từ khóa và hướng dẫn sử dụng',
                 'Hỗ trợ tư vấn, xây dựng và phát triển hệ thống lõi doanh nghiệp'
-            ]
+            ],
+            'valueSelected' => 3
         ]
     ];
 @endphp
@@ -111,7 +114,7 @@
                         @endforeach
                     </div>
                     <div class="priceBox_body_item_button">
-                        <a href="https://zalo.me/0968617168" class="button" target="_blank">Chọn gói này</a>
+                        <div class="button" onClick="toggleModalWebsite('formRequestWebsite', {{ $item['valueSelected'] }})">Chọn gói này</div>
                     </div>
                     <div class="priceBox_body_item_saleoff">
                         <div class="saleoffBox effectBottomToTop">

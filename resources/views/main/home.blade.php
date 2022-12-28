@@ -119,7 +119,7 @@
             <!-- tocContent main -->
             <div id="tocContentMain"></div>
             <!-- Form -->
-            {{-- @include('main.home.form') --}}
+            @include('main.home.form')
         </div>
     </div>
 @endsection

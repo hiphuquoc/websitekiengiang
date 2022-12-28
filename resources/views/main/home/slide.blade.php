@@ -5,7 +5,7 @@
     <div class="slideBox_body">
         <div class="container">
             <div class="slideBox_body_left">
-                <div id="slideEffectDropdown">
+                <div id="slideEffectDropdown" style="opacity:0;">
                     <h2>
                         <span>Website sẽ là "cỗ máy in tiền"</span>
                         <span>nếu bạn đầu tư đúng cách</span>
@@ -16,7 +16,7 @@
                         <span>giúp doanh nghiệp tạo nên giá trị thương hiệu 4.0 chuyên nghiệp.</span>
                     </div>
                 </div>
-                <div id="slideEffectFadeIn" class="aboutUsSortBox">
+                <div id="slideEffectFadeIn" class="aboutUsSortBox" style="opacity:0;">
                         <div class="aboutUsSortBox_item">
                             <div class="aboutUsSortBox_item_number">
                                 +10
@@ -58,23 +58,22 @@
         {{-- <video class="slideBox_video" type="video/mp4" autoplay muted loop><source src="/videos/merry-christmas.mov" title="thiết kế website kiên giang">Video thiết kế website kiên giang</video> --}}
 </div>
 @push('scriptCustom')
-<script type="text/javascript">  
-    /* ẩn trước phần tử effect fladeIn */
-    $('#slideEffectFadeIn').css('opacity', 0);
+<script type="text/javascript">
     /* ẩn trước phần tử effect dropDown */
     const elementDropdown   = $('#slideEffectDropdown');
     const marginTopReal     = parseInt(elementDropdown.css('margin-top'));
     elementDropdown.css({
-        'margin-top'    : (marginTopReal - 200)+'px',
-        'opacity'       : 0
+        'margin-top'    : (marginTopReal - 200)+'px'
     });
     /* hiệu ứng rơi xuống */
-    elementDropdown.animate({
-        'margin-top'    : marginTopReal+'px',
-        'opacity'       : 1
-    }, 800, function(){
-        slideEffectFadeIn();
-    });
+    setTimeout(() => {
+        elementDropdown.animate({
+            'margin-top'    : marginTopReal+'px',
+            'opacity'       : 1
+        }, 800, function(){
+            slideEffectFadeIn();
+        });
+    }, 300);
     /* hiệu ứng fade in */
     function slideEffectFadeIn(){
         const elementFladeIn    = $('#slideEffectFadeIn');
