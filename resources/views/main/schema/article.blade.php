@@ -47,8 +47,8 @@
             "logo": {
                 "@type": "ImageObject",
                 "url": "{{ config('info.logo') }}",
-                "width": "500",
-                "height": "500"
+                "width": "750",
+                "height": "460"
             }
         },
         "potentialAction": {

@@ -2,8 +2,8 @@
 
 return [
     /* dùng khai báo schema */
-    'logo'              => '',
-    'image'             => '',
+    'logo'              => env('APP_URL').'/images/logo-website-750x460.jpg',
+    'image'             => env('APP_URL').'/images/logo-website-750x460.jpg',
     'description'       => 'Thiết Kế Website chuyên nghiệp Kiên Giang - Xây dựng thương hiệu 4.0 thành công. Hỗ trợ tối ưu hóa hiệu quả kinh doanh trực tuyến và chăm sóc Website.',
     'founder'           => 'Phạm Văn Phú',
     'address_founder'   => '443 Mạc Cửu, Phường Vĩnh Thanh, Thành phố Rạch Giá, Tỉnh Kiên Giang',
