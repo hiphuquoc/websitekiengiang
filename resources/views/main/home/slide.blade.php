@@ -54,7 +54,7 @@
     <div class="slideBox_bottom">
         <img src="/images/bg-wave-1.png" alt="Thiết kế website kiên giang" title="Thiết kế website kiên giang" />
     </div>
-    <video class="slideBox_video" type="video/mp4" autoplay muted loop><source src="{{ Storage::url('videos/background-slide-25.webm') }}" title="thiết kế website kiên giang">Video thiết kế website kiên giang</video>
+    <video class="slideBox_video" type="video/mp4" autoplay muted loop><source src="{{ Storage::url('videos/background-slide-19.mp4') }}" title="thiết kế website kiên giang">Video thiết kế website kiên giang</video>
         {{-- <video class="slideBox_video" type="video/mp4" autoplay muted loop><source src="/videos/merry-christmas.mov" title="thiết kế website kiên giang">Video thiết kế website kiên giang</video> --}}
 </div>
 @push('scriptCustom')
