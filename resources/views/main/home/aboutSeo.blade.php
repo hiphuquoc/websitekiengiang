@@ -4,7 +4,7 @@
     </div>
     <div class="aboutSeoBox_content effectFadeIn">
         <div class="aboutSeoBox_content_title">
-            <h2>Lợi thế của Website chuẩn Seo?</h2>
+            <h2 id="thiet-ke-website-chuan-seo-kien-giang">Lợi thế của Website chuẩn Seo?</h2>
         </div>
         <div class="aboutSeoBox_content_text">
             <h3>Khách hàng bắt đầu tìm kiếm dịch vụ họ cần trên Google...</h3>

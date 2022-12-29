@@ -59,7 +59,7 @@
 <div class="specialBox">
     <div class="container">
         <div class="specialBox_head">
-            <h2>Dịch vụ thiết kế Website {{ ucwords(env('LOCAL_VN')) }} có gì?</h2>
+            <h2 id="thiet-ke-website-kien-giang-co-gi-dac-biet">Dịch vụ thiết kế Website {{ ucwords(env('LOCAL_VN')) }} có gì?</h2>
             <div class="specialBox_head_desc">Các tính năng, gói hỗ trợ có trong tất cả các Website của chúng tôi.</div>
         </div>
         <div class="specialBox_body effectFadeIn">

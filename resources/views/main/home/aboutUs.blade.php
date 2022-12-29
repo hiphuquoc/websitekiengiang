@@ -5,7 +5,7 @@
     <div class="aboutUsBox_image">
         <img src="/images/about-us.png" alt="Giới thiệu website {{ ucwords(env('LOCAL_VN')) }}" title="Giới thiệu website {{ ucwords(env('LOCAL_VN')) }}" />
     </div> --}}
-    <h2>Về Website {{ ucwords(env('LOCAL_VN')) }}</h2>
+    <h2 id="gioi-thieu-website-kien-giang">Về Website {{ ucwords(env('LOCAL_VN')) }}</h2>
     <div class="effectFadeIn">
         <p>
             <strong>Website {{ ucwords(env('LOCAL_VN')) }}</strong> được thành lập và phát triển bởi một nhóm Lập trình viên chuyên nghiệp với hơn 5 năm kinh nghiệm tại một công ty công nghệ chuyên về Thiết kế và Phát triển ứng dụng Website cho khách hàng Nhật Bản.

@@ -83,7 +83,7 @@
 <div class="priceBox">
     <div class="container">
         <div class="priceBox_head">
-            <h2>Bảng giá thiết kế Website</h2>
+            <h2 id="bang-gia-thiet-ke-website-kien-giang">Bảng giá thiết kế Website</h2>
             <div class="priceBox_head_desc">Chi tiết tính năng theo từng gói dịch vụ thiết kế Website</div>
         </div>
         <div class="priceBox_body">

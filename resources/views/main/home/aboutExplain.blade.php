@@ -4,7 +4,7 @@
     </div> --}}
     <div class="aboutExplainBox_content">
         <div class="aboutExplainBox_content_title">
-            <h2>Website dễ quản trị và mở rộng</h2>
+            <h2 id="thiet-ke-website-de-dang-su-dung-kien-giang">Website dễ quản trị và mở rộng</h2>
         </div>
         <div class="aboutExplainBox_content_text">
             <div class="effectFadeIn">

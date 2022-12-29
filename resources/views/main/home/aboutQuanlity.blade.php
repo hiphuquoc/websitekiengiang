@@ -5,7 +5,7 @@
     </div>
     <div class="aboutQuanlityBox_content">
         <div class="aboutQuanlityBox_content_title">
-            <h2>Vì sao nên Thiết kế Website chất lượng hơn là "giá rẻ"?</h2>
+            <h2 id="thiet-ke-website-chat-luong-kien-giang">Vì sao nên Thiết kế Website chất lượng hơn là "giá rẻ"?</h2>
         </div>
         <div class="aboutQuanlityBox_content_text">
             <h3>Dịch vụ giá rẻ tiềm ẩn rất nhiều rủi ro...</h3>

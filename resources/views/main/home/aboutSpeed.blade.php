@@ -2,7 +2,7 @@
     
     <div class="aboutSpeedBox_content">
         <div class="aboutSpeedBox_content_title">
-            <h2>Thiết kế tối ưu trải nghiệm người dùng</h2>
+            <h2 id="thiet-ke-website-toc-do-cao-kien-giang">Thiết kế tối ưu trải nghiệm người dùng</h2>
         </div>
         <div class="aboutSpeedBox_content_text effectFadeIn">
             <div>Trải nghiệm người dùng là tiêu chí tiên quyết để đánh giá độ thành công của một Website và thương hiệu 4.0.</div>

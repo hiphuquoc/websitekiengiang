@@ -2,7 +2,7 @@
     
     <div class="aboutTemplateBox_content effectFadeIn">
         <div class="aboutTemplateBox_content_title">
-            <h2>Giao diện đẹp - chuẩn thiết kế Ux/Ui có ý nghĩa như thế nào?</h2>
+            <h2 id="thiet-ke-website-chuan-ux-ui-kien-giang">Giao diện đẹp - chuẩn thiết kế Ux/Ui có ý nghĩa như thế nào?</h2>
         </div>
         <div class="aboutTemplateBox_content_text">
             <h3>Vẻ ngoài quan trọng đến thế sao...?</h3>

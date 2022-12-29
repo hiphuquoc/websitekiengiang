@@ -41,7 +41,7 @@
 
 <div class="container">
     <div class="stepByStepBox_head">
-        <h2>Quy trình thiết kế Website</h2>
+        <h2 id="quy-trinh-thiet-ke-website-kien-giang">Quy trình thiết kế Website</h2>
         <div class="stepByStepBox_head_desc">Quy trình làm việc và tương tác khách hàng của Thiết kế Website {{ ucwords(env('LOCAL_VN')) }}</div>
     </div>
     <div class="stepByStepBox_body">
