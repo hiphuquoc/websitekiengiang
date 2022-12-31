@@ -17,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'home'])->name('main.home');
+Route::get('/cong-tac-vien', [RoutingController::class, 'congTacVien'])->name('main.congTacVien');
+/* AJAX */
 Route::get('/buildTocContentMain', [HomeController::class, 'buildTocContentMain'])->name('main.buildTocContentMain');
 Route::get('/loadNotice', [AjaxController::class, 'loadNotice'])->name('main.loadNotice');
 Route::post('/submitFormRequestWebsite', [AjaxController::class, 'submitFormRequestWebsite'])->name('ajax.submitFormRequestWebsite');

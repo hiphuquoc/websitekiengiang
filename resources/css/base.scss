@@ -59,6 +59,11 @@ $fontTitle  : 'Barlow Semi Condensed', sans-serif;
   }
 }
 
+@mixin fontAwesome {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+
 *, ::after, ::before {
     padding: 0;
     margin: 0;
@@ -93,14 +98,26 @@ ul {
       margin-top: 0.75rem;
     }
   }
+  &.withIconCheck {
+    li {
+      margin-top: 0;
+      list-style-type: none;
+      &:before {
+        @include fontAwesome;
+        content: '\f00c';
+        color: $colorLv2;
+        margin-right: 0.5rem;
+      }
+    }
+  }
 }
 
 h2 {
   font-family: $fontTitle;
   margin-bottom: 1rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 3.2rem;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   @media(max-width: 990px){
     font-size: 2rem;
     margin-bottom: 0.75rem !important;
@@ -119,7 +136,11 @@ h3, h4 {
 h5, h6 {
   font-family: $fontTitle;
 }
-
+.pageContent {
+  h2, h3, h4, h5, h6 {
+    color: $colorLv2;
+  }
+}
 p {
   margin-bottom: 0.75rem;
   @media(max-width: 577px){
@@ -263,6 +284,8 @@ input, textarea, select {
 }
 
 label {
+  font-weight: 600;
+  font-size: 0.95rem;
   &.required {
     &:after {
       content: '*';
@@ -369,8 +392,4 @@ $folderFont : '/fonts/';
 	font-style:normal;
 	font-weight:700;
 	src:url($folderFont+"svn-gilroy_semibold.ttf")
-}
-@mixin fontAwesome {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
 }

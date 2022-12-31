@@ -32,13 +32,23 @@ ul {
 ul li:not(:first-child) {
   margin-top: 0.75rem;
 }
+ul.withIconCheck li {
+  margin-top: 0;
+  list-style-type: none;
+}
+ul.withIconCheck li:before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f00c";
+  color: #069A8E;
+  margin-right: 0.5rem;
+}
 
 h2 {
   font-family: "Barlow Semi Condensed", sans-serif;
   margin-bottom: 1rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   line-height: 3.2rem;
-  text-transform: uppercase;
 }
 @media (max-width: 990px) {
   h2 {
@@ -74,6 +84,10 @@ h3, h4 {
 
 h5, h6 {
   font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.pageContent h2, .pageContent h3, .pageContent h4, .pageContent h5, .pageContent h6 {
+  color: #069A8E;
 }
 
 p {
@@ -227,6 +241,10 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
+label {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
 label.required:after {
   content: "*";
   color: red;
@@ -2672,4 +2690,39 @@ label.required:after {
   .formModalBox_box_body_item:not(:first-child) {
     margin-top: 1rem;
   }
+}
+
+.formCTVBox {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+.formCTVBox_left {
+  width: 100%;
+}
+.formCTVBox_right {
+  width: 100%;
+  margin-left: 3.5rem;
+}
+.formCTVBox_right_form {
+  background: #fff;
+  box-shadow: 10px 10px 30px -25px #069A8E;
+  padding: 0.75rem 1.5rem 1.5rem;
+  margin-top: -400px;
+  border-radius: 15px;
+}
+.formCTVBox_right_form_head {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.formCTVBox_right_form_body {
+  margin-bottom: 1.5rem;
+}
+.formCTVBox_right_form_body_item:not(:first-child) {
+  margin-top: 1rem;
+}
+.formCTVBox_right_form_footer {
+  text-align: right;
 }

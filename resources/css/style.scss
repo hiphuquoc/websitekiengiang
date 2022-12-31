@@ -2177,3 +2177,39 @@ $height_headerMain : 55px;
         }
     }
 }
+.formCTVBox {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+    &_left {
+        width: 100%;
+    }
+    &_right {
+        width: 100%;
+        margin-left: 3.5rem;
+        &_form {
+            background: #fff;
+            box-shadow: 10px 10px 30px -25px $colorLv2;
+            padding: 0.75rem 1.5rem 1.5rem;
+            margin-top: -400px;
+            border-radius: 15px;
+            &_head {
+                text-align: center;
+                font-size: 1.6rem;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+            }
+            &_body {
+                margin-bottom: 1.5rem;
+                &_item {
+                    &:not(:first-child){
+                        margin-top: 1rem;
+                    }
+                }
+            }
+            &_footer {
+                text-align: right;
+            }
+        }
+    }
+}
