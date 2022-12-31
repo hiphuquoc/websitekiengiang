@@ -79,7 +79,7 @@
 <h2>Cách tính hoa hồng</h2>
 <p>
     <strong style="color:red;">Hoa hồng 20%</strong> trên tổng giá trị hợp đồng.<br/>
-    <strong style="color:red;">Hoa hồng cấp dưới 2%</strong> trên tổng giá trị hợp đồng và áp dụng không quá 3 cấp.<br/>
+    <strong style="color:red;">Hoa hồng cấp dưới 2%</strong> trên tổng giá trị hợp đồng và <strong>áp dụng không quá 3 cấp</strong>.<br/>
     <em><strong>Ví dụ cụ thể</strong>: A giới thiệu B tham gia chương trình Ctv, B giới thiệu C. Nếu C giới thiệu thành công khách hàng chốt hợp đồng thì C được hưởng 20%, B được hưởng 2% và A được hưởng 2%.</em>
 </p>
 

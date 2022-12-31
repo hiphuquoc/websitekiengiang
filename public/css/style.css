@@ -2717,6 +2717,9 @@ label.required:after {
   font-weight: bold;
   letter-spacing: 0.5px;
 }
+.formCTVBox_right_form_head h2, .formCTVBox_right_form_head h3 {
+  line-height: 2.5rem;
+}
 .formCTVBox_right_form_body {
   margin-bottom: 1.5rem;
 }
@@ -2725,4 +2728,28 @@ label.required:after {
 }
 .formCTVBox_right_form_footer {
   text-align: right;
+}
+@media (max-width: 990px) {
+  .formCTVBox {
+    align-items: flex-start;
+  }
+  .formCTVBox_right_form {
+    margin-top: 0;
+  }
+}
+@media (max-width: 766px) {
+  .formCTVBox {
+    flex-direction: column;
+  }
+  .formCTVBox_left {
+    margin-bottom: 1rem;
+  }
+  .formCTVBox_right {
+    margin-left: 0;
+  }
+}
+@media (max-width: 577px) {
+  .formCTVBox_right_form {
+    padding: 0.5rem 1rem 1rem;
+  }
 }

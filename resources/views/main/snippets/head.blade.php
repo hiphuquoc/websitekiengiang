@@ -1,6 +1,11 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="robots" content="index,follow">
+@php
+    $follow = 'index,follow';
+    if(URL::current()==(env('APP_URL').'/cong-tac-vien')) $follow = 'noindex,nofollow';
+    // dd(URL::current());
+@endphp
+<meta name="robots" content="{{ $follow }}">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="fragment" content="!" />
 <link rel="shortcut icon" href="/images/svg/favicon.ico" type="image/x-icon">

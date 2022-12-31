@@ -2198,6 +2198,9 @@ $height_headerMain : 55px;
                 font-size: 1.6rem;
                 font-weight: bold;
                 letter-spacing: 0.5px;
+                h2, h3 {
+                    line-height: 2.5rem;
+                }
             }
             &_body {
                 margin-bottom: 1.5rem;
@@ -2209,6 +2212,30 @@ $height_headerMain : 55px;
             }
             &_footer {
                 text-align: right;
+            }
+        }
+    }
+    @media(max-width: 990px){
+        align-items: flex-start;
+        &_right {
+            &_form {
+                margin-top: 0;
+            }
+        }
+    }
+    @media(max-width: 766px){
+        flex-direction: column;
+        &_left {
+            margin-bottom: 1rem;
+        }
+        &_right {
+            margin-left: 0;
+        }
+    }
+    @media(max-width: 577px){
+        &_right {
+            &_form {
+                padding: 0.5rem 1rem 1rem;
             }
         }
     }
