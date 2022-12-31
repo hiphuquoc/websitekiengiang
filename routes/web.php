@@ -22,6 +22,7 @@ Route::get('/cong-tac-vien', [RoutingController::class, 'congTacVien'])->name('m
 Route::get('/buildTocContentMain', [HomeController::class, 'buildTocContentMain'])->name('main.buildTocContentMain');
 Route::get('/loadNotice', [AjaxController::class, 'loadNotice'])->name('main.loadNotice');
 Route::post('/submitFormRequestWebsite', [AjaxController::class, 'submitFormRequestWebsite'])->name('ajax.submitFormRequestWebsite');
+Route::post('/submitFormRegistryCtv', [AjaxController::class, 'submitFormRegistryCtv'])->name('ajax.submitFormRegistryCtv');
 Route::get('/loadLoading', [AjaxController::class, 'loadLoading'])->name('ajax.loadLoading');
 /* ===== ROUTING ALL ===== */
 Route::get("/{slug}/{slug2?}/{slug3?}/{slug4?}/{slug5?}/{slug6?}/{slug7?}/{slug8?}/{slug9?}/{slug10?}", [RoutingController::class, 'routing'])->name('routing');

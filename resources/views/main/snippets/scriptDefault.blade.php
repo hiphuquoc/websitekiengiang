@@ -187,22 +187,24 @@
                 }
 
                 let element         = $('#tocContentMain');
-                let positionE       = element.offset().top;
-                let heightE         = element.outerHeight();
-                let boxContent      = $('#'+idElement);
-                let positionB       = boxContent.offset().top;
-                let heightB         = boxContent.outerHeight();
-                let heightFooter    = $('.footer').outerHeight();
-                $(document).scroll(function(){
-                    let scrollNow   = $(document).scrollTop();
-                    // let minScroll   = parseInt(heightE + positionE);
-                    // let maxScroll   = parseInt(heightB + positionB - heightFooter);
-                    if(scrollNow > 500&& $(window).width()>990){ 
-                        $('.tocFixedIcon').css('display', 'block');
-                    }else {
-                        $('.tocFixedIcon').css('display', 'none');
-                    }
-                });
+                if(element.length>0){
+                    let positionE       = element.offset().top;
+                    let heightE         = element.outerHeight();
+                    let boxContent      = $('#'+idElement);
+                    let positionB       = boxContent.offset().top;
+                    let heightB         = boxContent.outerHeight();
+                    let heightFooter    = $('.footer').outerHeight();
+                    $(document).scroll(function(){
+                        let scrollNow   = $(document).scrollTop();
+                        // let minScroll   = parseInt(heightE + positionE);
+                        // let maxScroll   = parseInt(heightB + positionB - heightFooter);
+                        if(scrollNow > 500&& $(window).width()>990){ 
+                            $('.tocFixedIcon').css('display', 'block');
+                        }else {
+                            $('.tocFixedIcon').css('display', 'none');
+                        }
+                    });
+                }
             }
         });
     }

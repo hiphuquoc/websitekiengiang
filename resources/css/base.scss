@@ -248,7 +248,7 @@ blockquote{
 
 .button {
   padding: 0.5rem 1.5rem;
-  background: rgba(6,154,142,0.75);
+  background: $colorLv2;
   display: inline-block;
   font-family: $fontText;
   font-weight: 600;
@@ -258,7 +258,7 @@ blockquote{
   font-size: 1.1rem;
   &:focus, &:hover {
     outline: none;
-    background: $colorLv2;
+    background: rgba(6,154,142,0.85);
   }
   &.cancel {
     background: $bg-04;

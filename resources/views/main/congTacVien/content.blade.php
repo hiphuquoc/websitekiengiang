@@ -1,61 +1,74 @@
 <div class="formCTVBox">
     <div class="formCTVBox_left">
-        {{-- <h2>Lời ngỏ</h2> --}}
         <h2>Lời ngỏ!</h2> 
         <p>
             Chào bạn, <strong>Website Kiên Giang</strong> rất vui khi được gửi lời chào đến bạn và cảm ơn bạn đã quan tâm đến chúng tôi.<br/>
             Chúng tôi là công ty Digital Marketing chuyên cung cấp dịch vụ như thiết kế và chăm sóc website, thiết kế landing page, xây dựng và chăm sóc fanpage, quảng cáo trên Google Ads và Facebook, thiết kế nhận diện thương hiệu, thiết kế ấn phẩm và banner quảng cáo, tư vấn xây dựng thương hiệu 4.0, vv.<br/>
             Với đội ngũ nhân viên có trình độ chuyên môn cao và nhiều năm kinh nghiệm trong ngành công nghệ thông tin và kinh doanh, Chúng tôi tự tin có thể mang đến những giá trị và sản phẩm tốt nhất cho khách hàng.<br/>
-            <strong style="font-style:italic;">Và để mở rộng thị trường, chúng tôi rất mong muốn hợp tác với bạn theo nguyên tác Win-Win để cùng nhau đạt được những thành công như mong đợi.</strong>
+            <strong style="font-style:italic;">Và để mở rộng thị trường, chúng tôi rất mong muốn hợp tác với bạn theo nguyên tắc Win-Win để cùng nhau đạt được thành công.</strong>
         </p>
     </div>
     <div class="formCTVBox_right">
-        <div id="form-dang-ky-cong-tac-vien" class="formCTVBox_right_form">
-            <div class="formCTVBox_right_form_head">
-                <h2>Kinh doanh cùng chúng tôi</h2>
+        <form id="formSubmit" method="post">
+            <div id="js_loadNotice_write" class="formCTVBox_right_form">
+                <div class="formCTVBox_right_form_head">
+                    <h2>Kinh doanh cùng chúng tôi</h2>
+                </div>
+                <div class="formCTVBox_right_form_body">
+                    <div class="formCTVBox_right_form_body_item"> 
+                        <label>Mã Ctv giới thiệu bạn</label>
+                        <input type="text" name="code_parent" />
+                    </div>
+                    <div class="formCTVBox_right_form_body_item"> 
+                        <label class="required">Họ và tên</label>
+                        <input type="text" name="name" required />
+                    </div>
+                    <div class="formCTVBox_right_form_body_item"> 
+                        <label class="required">Số điện thoại</label>
+                        <input type="text" name="phone" required />
+                    </div>
+                    <div class="formCTVBox_right_form_body_item"> 
+                        <label>Email</label>
+                        <input type="text" name="email" />
+                    </div>
+                    <div class="formCTVBox_right_form_body_item"> 
+                        <label class="required">Số Cmnd/Cccd</label>
+                        <input type="text" name="identity" required />
+                    </div>
+                    <div class="formCTVBox_right_form_body_item"> 
+                        <label class="required">Địa chỉ</label>
+                        <input type="text" name="address" required />
+                    </div>
+                </div>
+                <div class="formCTVBox_right_form_footer">
+                    <div class="button" onClick="submitForm('formSubmit')">Đăng ký ngay</div>
+                </div>
             </div>
-            <div class="formCTVBox_right_form_body">
-                <div class="formCTVBox_right_form_body_item"> 
-                    <label class="required">Họ và tên</label>
-                    <input type="text" name="name" required />
-                </div>
-                <div class="formCTVBox_right_form_body_item"> 
-                    <label class="required">Số điện thoại</label>
-                    <input type="text" name="phone" required />
-                </div>
-                <div class="formCTVBox_right_form_body_item"> 
-                    <label>Email nếu có</label>
-                    <input type="text" name="email" />
-                </div>
-                <div class="formCTVBox_right_form_body_item"> 
-                    <label class="required">Số Cmnd/Cccd</label>
-                    <input type="text" name="identity" required />
-                </div>
-                <div class="formCTVBox_right_form_body_item"> 
-                    <label class="required">Địa chỉ</label>
-                    <input type="text" name="address" required />
-                </div>
-            </div>
-            <div class="formCTVBox_right_form_footer">
-                <div class="button">Đăng ký ngay</div>
-            </div>
-        </div>
+        </form>
     </div>
 </div>
 
+<h2>Quyền lợi Cộng Tác Viên</h2>
+<ul class="withIconCheck">
+    <li>Thu nhập thụ động và không giới hạn với chính sách hoa hồng hấp dẫn.</li>
+    <li>Không mất tiền đầu tư ban đầu, không cần cập nhật kiến thức về công nghệ và bán hàng, chỉ cần "truyền miệng" và giới thiệu.</li>
+    <li>Không áp đặt doanh số, không phụ thuộc công ty.</li>
+    <li>Được sử dụng hình ảnh, nội dung và thương hiệu công ty để quảng cáo.</li>
+    <li>Được cung cấp tài khoản truy cập hệ thống dành riêng cho Ctv. Tại đây Ctv có thể theo dõi hoa hồng trong tháng và kiểm tra danh sách các Ctv cấp dưới đang hoạt động.</li>
+    <li>Các cộng tác viên tiềm năng sẽ được tham gia các chương trình Ctv mở rộng khác với nhiều ưu đãi và lợi thế hơn.</li>
+</ul>
 
 <h2>Quy trình đăng ký Cộng Tác Viên (Ctv)</h2>
     <div>Thông tin cần thiết để đăng ký Ctv bao gồm:</div>
     <ul class="withIconCheck">
         <li><strong>Họ tên</strong></li>
         <li><strong>Số điện thoại</strong></li>
-        <li><strong>Email</strong></li>
         <li><strong>Số CMND/CCCD</strong></li> 
         <li><strong>Địa chỉ</strong></li>
         <li><strong>Tài khoản Ngân hàng</strong> (dùng để chi trả hoa hồng)</li> 
     </ul>
     <p>
-        Bạn có thể đăng ký bằng cách điền đầy đủ thông tin <a href="#form-dang-ky-cong-tac-vien" style="font-weight:bold;">tại đây</a>!
+        Bạn có thể đăng ký bằng cách điền đầy đủ thông tin <a href="#js_loadNotice_write" style="font-weight:bold;">tại đây</a>!
     </p>
     <div>Sau khi trở thành Ctv của Website Kiên Giang, chúng tôi sẽ cung cấp cho bạn:</div>
     <ul class="withIconCheck">
@@ -89,16 +102,6 @@
     <em style="font-weight:bold;">Một số trường hợp ưu tiên có thể được đăng ký để nhận hoa hồng ngay sau khi khách hàng cọc hợp đồng.</em>
 </p>
 
-<h2>Quyền lợi Cộng Tác Viên</h2>
-<ul class="withIconCheck">
-    <li>Thu nhập thụ động và không giới hạn với chính sách hoa hồng hấp dẫn.</li>
-    <li>Không mất tiền đầu tư ban đầu, không cần cập nhật kiến thức về công nghệ và bán hàng, chỉ cần "truyền miệng" và giới thiệu.</li>
-    <li>Không áp đặt doanh số, không phụ thuộc công ty.</li>
-    <li>Được sử dụng hình ảnh, nội dung và thương hiệu công ty để quảng cáo.</li>
-    <li>Được cung cấp tài khoản truy cập hệ thống dành riêng cho Ctv. Tại đây Ctv có thể theo dõi hoa hồng trong tháng và kiểm tra danh sách các Ctv cấp dưới đang hoạt động.</li>
-    <li>Các cộng tác viên tiềm năng sẽ được tham gia các chương trình Ctv mở rộng khác với nhiều ưu đãi và lợi thế hơn.</li>
-</ul>
-
 <p>
 <h2>Quy định chấm dứt hợp tác</h2>
 <p>
@@ -110,6 +113,80 @@
     <li>Lợi dụng danh nghĩa của Công ty để thực hiện những hành vi vi phạm pháp luật</li> 
     <li>Làm tổn hại cho khách hàng, ảnh hưởng đến Ctv khác và gây ảnh hưởng xấu đến thương hiệu của Công ty</li>
 </ul>
+@push('scriptCustom')
+    <script type="text/javascript">
+        /* submit form */
+        function submitForm(idForm){
+            const error     = validateForm(idForm);
+            if(error.length==0){
+                /* tải loading */ 
+                loadLoading('js_loadNotice_write');
+                /* lấy dữ liệu truyền đi */
+                var data    = $('#'+idForm).serializeArray();
+                $.ajax({
+                    url         : '{{ route("ajax.submitFormRegistryCtv") }}',
+                    type        : 'post',
+                    dataType    : 'html',
+                    data        : {
+                        '_token'    : '{{ csrf_token() }}',
+                        data        : data
+                    },
+                    success     : function(response){
+                        setTimeout(() => {
+                            /* thông báo */
+                            loadNotice(response, 'js_loadNotice_write');
+                        }, 500);
+                    }
+                });
+            }else {
+                $.each(error, function(index, value){
+                    const input = $('#'+idForm).find('[name='+value.name+']');
+                    input.attr('placeholder', value.notice).css('border', '1px solid red');
+                });
+            }
+        }
+        /* validate form */
+        function validateForm(idForm){
+            let error       = [];
+            /* input required không được bỏ trống */
+            $('#'+idForm).find('input[required]').each(function(){
+                /* đưa vào mảng */
+                if($(this).val()==''){
+                    const errorItem = [];
+                    errorItem['name']       = $(this).attr('name');
+                    errorItem['notice']     = 'Không được để trống trường này';
+                    error.push(errorItem);
+                }
+            });
+            return error;
+        }
+
+        function loadLoading(idWrite){
+            $.ajax({
+                url         : '{{ route("ajax.loadLoading") }}',
+                type        : 'get',
+                dataType    : 'html',
+                success     : function(response){
+                    $('#'+idWrite).html(response);
+                }
+            });
+        }
+
+        function loadNotice(type, idWrite){
+            $.ajax({
+                url         : '{{ route("main.loadNotice") }}',
+                type        : 'get',
+                dataType    : 'html',
+                data        : {
+                    type    : 'success'
+                },
+                success     : function(data){
+                    $('#'+idWrite).html(data);
+                }
+            });
+        }
+    </script>
+@endpush
     
 
 

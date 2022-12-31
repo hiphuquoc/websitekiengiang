@@ -3,7 +3,6 @@
 @php
     $follow = 'index,follow';
     if(URL::current()==(env('APP_URL').'/cong-tac-vien')) $follow = 'noindex,nofollow';
-    // dd(URL::current());
 @endphp
 <meta name="robots" content="{{ $follow }}">
 <meta name="viewport" content="width=device-width, initial-scale=1" />

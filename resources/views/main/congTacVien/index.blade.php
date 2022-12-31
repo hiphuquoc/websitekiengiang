@@ -3,12 +3,13 @@
 
 @endpush
 @section('content')
-    <!-- Header -->
+    <!-- Header Main -->
     @include('main.snippets.headerMain')
     <!-- Nội dung -->
     <div class="pageContent" style="overflow: hidden;">
         <!-- Ảnh đại diện trang -->
-        <img src="{{ Storage::url('images/banner-cong-tac-vien-1.png') }}" alt="banner cộng tác viên của website kiên giang" title="banner cộng tác viên của website kiên giang" />
+        <img class="hide-766" src="{{ Storage::url('images/banner-cong-tac-vien-1.png') }}" alt="banner cộng tác viên của website kiên giang" title="banner cộng tác viên của website kiên giang" />
+        <img class="show-766" src="{{ Storage::url('images/banner-cong-tac-vien-mobile-1.png') }}" alt="banner cộng tác viên của website kiên giang" title="banner cộng tác viên của website kiên giang" />
         <!-- Nội dung -->
         <div class="sectionBox">
             <div class="container">

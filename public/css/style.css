@@ -206,7 +206,7 @@ blockquote em {
 
 .button {
   padding: 0.5rem 1.5rem;
-  background: rgba(6, 154, 142, 0.75);
+  background: #069A8E;
   display: inline-block;
   font-family: "Montserrat Alternates", "mt", "SVN-Gilroy Bold", serif;
   font-weight: 600;
@@ -217,7 +217,7 @@ blockquote em {
 }
 .button:focus, .button:hover {
   outline: none;
-  background: #069A8E;
+  background: rgba(6, 154, 142, 0.85);
 }
 .button.cancel {
   background: #dee2e6;
@@ -427,7 +427,7 @@ label.required:after {
   position: relative;
   z-index: 103;
   color: #fff;
-  background: rgba(0, 85, 85, 0.8);
+  background: rgba(0, 85, 85, 0.85);
   transition: all 0.5s;
 }
 .headerMain .container {
@@ -2663,15 +2663,6 @@ label.required:after {
 .formModalBox_box_footer_item:not(:first-child) {
   margin-left: 1rem;
 }
-.formModalBox_box .icon {
-  width: 90px;
-  position: absolute;
-  top: -2rem;
-  right: -1.5rem;
-  padding: 10px;
-  border-radius: 50%;
-  transform: rotate(7deg);
-}
 @media (max-width: 577px) {
   .formModalBox_box_head {
     margin-bottom: 0.5rem;
@@ -2724,7 +2715,7 @@ label.required:after {
   margin-bottom: 1.5rem;
 }
 .formCTVBox_right_form_body_item:not(:first-child) {
-  margin-top: 1rem;
+  margin-top: 0.75rem;
 }
 .formCTVBox_right_form_footer {
   text-align: right;
@@ -2752,4 +2743,25 @@ label.required:after {
   .formCTVBox_right_form {
     padding: 0.5rem 1rem 1rem;
   }
+}
+
+.confirmBox {
+  position: relative;
+}
+.confirmBox_title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+.confirmBox_text {
+  font-weight: 500;
+}
+.confirmBox .icon {
+  width: 90px;
+  position: absolute;
+  top: -45px;
+  right: -45px;
+  padding: 10px;
+  border-radius: 50%;
+  transform: rotate(7deg);
 }

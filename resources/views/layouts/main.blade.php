@@ -9,11 +9,6 @@
 
 <!-- === START:: Body === -->
 <body>
-    <!-- === START:: Header === -->
-    @include('main.snippets.headerTop')
-    {{-- @include('main.snippets.headerMain') --}}
-    <!-- === END:: Header === -->
-
     <!-- === START:: Content === -->
     @yield('content')
 

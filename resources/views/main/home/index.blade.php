@@ -50,6 +50,9 @@
 @endpush
 @section('content')
     <div style="overflow: hidden;">
+        <!-- === START:: Header Top === -->
+        @include('main.snippets.headerTop')
+        <!-- === END:: Header Top === -->
         @include('main.home.slide')
         <div id="js_buildTocContentSidebar_element">
             <!-- Về chúng tôi -->

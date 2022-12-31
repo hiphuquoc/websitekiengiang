@@ -32,4 +32,18 @@ class BuildInsertUpdateModel {
         }
         return $result;
     }
+    public static function buildArrayTableCtvInfo($data){
+        $result                                 = [];
+        if(!empty($data)){
+            $result['code']                     = $data['code'] ?? null;
+            $result['code_parent']              = $data['code_parent'] ?? null;
+            $result['name']                     = $data['name'];
+            $result['phone']                    = $data['phone'];
+            $result['email']                    = $data['email'] ?? null;
+            $result['identity']                 = $data['identity'];
+            $result['address']                  = $data['address'] ?? null;
+            if(!empty($dataForm['type'])) $result['type'] = $dataForm['type'];
+        }
+        return $result;
+    }
 }
