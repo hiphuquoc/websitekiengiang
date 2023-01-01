@@ -16,7 +16,7 @@
             <div>Bạn bắt đầu kinh doanh trên đó. Seo mãi không thấy top. Chạy quảng cáo, chia sẻ khắp mạng xã hội nhưng cũng không ra đơn.</div>
             {{-- không hề được nghiên cứu, đầu tư ngay từ đầu nên cũng  --}}
             <div>Sau khi khám phá lý do, bạn phát hiện ra rằng website của bạn không có <strong>"khả năng thu hút và giữ chân khách hàng"</strong>, và cũng không có <strong>"khả năng vượt qua đối thủ"</strong>.</div>
-            <div>Bạn liên hệ người bán để nhờ chỉnh sửa, nâng cấp thì cũng chỉ nhận được sự hỗ trợ kém kỳ vọng như cách mà họ làm Website cho bạn... bởi vì "<strong>giá rẻ</strong>"... Thậm chí bạn có trả thêm thì hệ thống cũng không hẵn sẽ nâng cấp được.</div>
+            <div>Bạn liên hệ để nhờ chỉnh sửa, nâng cấp thì cũng chỉ nhận được sự hỗ trợ kém kỳ vọng như cách mà họ làm Website cho bạn... bởi vì "<strong>giá rẻ</strong>"... Thậm chí bạn có trả thêm thì hệ thống cũng không hẵn sẽ nâng cấp được.</div>
             <div>Bạn nghĩ đến phương án "đập đi xây lại" và tìm đơn vị thiết kế giá rẻ khác... vòng lặp mới bắt đầu.</div>
             <p></p>
             <h3>Lựa chọn là ở bạn!</h3>
