@@ -125,6 +125,11 @@
         </div>
     </div>
 @endsection
+@push('bottom')
+    <!-- === START:: Zalo Ring === -->
+    @include('main.snippets.zaloRing')
+    <!-- === END:: Zalo Ring === -->
+@endpush
 @push('modal')
     <!-- Form -->
     @include('main.home.form')

@@ -3,8 +3,8 @@
         <h2>Lời ngỏ!</h2> 
         <p>
             Chào bạn, <strong>Website Kiên Giang</strong> rất vui khi được gửi lời chào đến bạn và cảm ơn bạn đã quan tâm đến chúng tôi.<br/>
-            Chúng tôi là công ty Digital Marketing chuyên cung cấp dịch vụ như thiết kế và chăm sóc website, thiết kế landing page, xây dựng và chăm sóc fanpage, quảng cáo trên Google Ads và Facebook, thiết kế nhận diện thương hiệu, thiết kế ấn phẩm và banner quảng cáo, tư vấn xây dựng thương hiệu 4.0, vv.<br/>
-            Với đội ngũ nhân viên có trình độ chuyên môn cao và nhiều năm kinh nghiệm trong ngành công nghệ thông tin và kinh doanh, Chúng tôi tự tin có thể mang đến những giá trị và sản phẩm tốt nhất cho khách hàng.<br/>
+            Chúng tôi là công ty Digital Marketing chuyên cung cấp dịch vụ thiết kế và chăm sóc website, thiết kế landing page, xây dựng và chăm sóc fanpage, quảng cáo Google Ads và Facebook, thiết kế nhận diện thương hiệu, thiết kế ấn phẩm và banner quảng cáo, tư vấn xây dựng thương hiệu 4.0, vv.<br/>
+            Với đội ngũ nhân viên có chuyên môn cao và nhiều năm kinh nghiệm trong ngành công nghệ thông tin và Digital Marketing, Chúng tôi tự tin có thể mang đến những giá trị và sản phẩm tốt nhất cho khách hàng.<br/>
             <strong style="font-style:italic;">Và để mở rộng thị trường, chúng tôi rất mong muốn hợp tác với bạn theo nguyên tắc Win-Win để cùng nhau đạt được thành công.</strong>
         </p>
     </div>
@@ -16,49 +16,62 @@
                 </div>
                 <div class="formCTVBox_right_form_body">
                     <div class="formCTVBox_right_form_body_item"> 
-                        <label>Mã Ctv giới thiệu bạn</label>
-                        <input type="text" name="code_parent" />
+                        <div class="column two">
+                            <div class="column_item">
+                                <label class="required">Họ và tên</label>
+                                <input type="text" name="name" required />
+                            </div>
+                            <div class="column_item"> 
+                                <label class="required">Số Cmnd/Cccd</label>
+                                <input type="text" name="identity" required />
+                            </div>
+                        </div>
                     </div>
                     <div class="formCTVBox_right_form_body_item"> 
-                        <label class="required">Họ và tên</label>
-                        <input type="text" name="name" required />
-                    </div>
-                    <div class="formCTVBox_right_form_body_item"> 
-                        <label class="required">Số điện thoại</label>
-                        <input type="text" name="phone" required />
-                    </div>
-                    <div class="formCTVBox_right_form_body_item"> 
-                        <label>Email</label>
+                        <div class="column two">
+                            <div class="column_item">
+                                <label class="required">Số điện thoại</label>
+                                <input type="text" name="phone" required />
+                            </div>
+                            <div class="column_item"> 
+                                <label>Email</label>
                         <input type="text" name="email" />
-                    </div>
-                    <div class="formCTVBox_right_form_body_item"> 
-                        <label class="required">Số Cmnd/Cccd</label>
-                        <input type="text" name="identity" required />
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class="formCTVBox_right_form_body_item"> 
                         <label class="required">Địa chỉ</label>
                         <input type="text" name="address" required />
                     </div>
+                    <div class="formCTVBox_right_form_body_item"> 
+                        <label>Mã Ctv giới thiệu cho bạn</label>
+                        <input type="text" name="code_parent" />
+                    </div>
+                    <div class="formCTVBox_right_form_body_item"> 
+                        <em>Việc đăng ký đồng nghĩa bạn đã đồng ý tất cả <a href="#dieu-khoan-quy-dinh" style="font-weight:500;">điều khoản và quy định Cộng tác viên</a>.</em>
+                    </div>
                 </div>
                 <div class="formCTVBox_right_form_footer">
-                    <div class="button" onClick="submitForm('formSubmit')">Đăng ký ngay</div>
+                    <div class="button" onClick="submitForm('formSubmit')"><i class="fa-solid fa-pencil"></i>Đăng ký ngay</div>
                 </div>
+                
             </div>
         </form>
     </div>
 </div>
 
-<h2>Quyền lợi Cộng Tác Viên</h2>
+<h2 id="dieu-khoan-quy-dinh">Quyền lợi Cộng tác viên</h2>
 <ul class="withIconCheck">
     <li>Thu nhập thụ động và không giới hạn với chính sách hoa hồng hấp dẫn.</li>
     <li>Không mất tiền đầu tư ban đầu, không cần cập nhật kiến thức về công nghệ và bán hàng, chỉ cần "truyền miệng" và giới thiệu.</li>
     <li>Không áp đặt doanh số, không phụ thuộc công ty.</li>
     <li>Được sử dụng hình ảnh, nội dung và thương hiệu công ty để quảng cáo.</li>
     <li>Được cung cấp tài khoản truy cập hệ thống dành riêng cho Ctv. Tại đây Ctv có thể theo dõi hoa hồng trong tháng và kiểm tra danh sách các Ctv cấp dưới đang hoạt động.</li>
-    <li>Các cộng tác viên tiềm năng sẽ được tham gia các chương trình Ctv mở rộng khác với nhiều ưu đãi và lợi thế hơn.</li>
+    <li>Các Cộng tác viên tiềm năng sẽ được tham gia các chương trình Ctv mở rộng khác với nhiều ưu đãi và lợi thế hơn.</li>
 </ul>
 
-<h2>Quy trình đăng ký Cộng Tác Viên (Ctv)</h2>
+<h2>Quy trình đăng ký Cộng tác viên (Ctv)</h2>
     <div>Thông tin cần thiết để đăng ký Ctv bao gồm:</div>
     <ul class="withIconCheck">
         <li><strong>Họ tên</strong></li>
@@ -105,7 +118,7 @@
 <p>
 <h2>Quy định chấm dứt hợp tác</h2>
 <p>
-    <strong>Chất lượng sản phẩm</strong>, <strong>Khách hàng thân thiết</strong> và <strong>Cộng Tác Viên</strong> là 3 chiến lược quan trọng 
+    <strong>Chất lượng sản phẩm</strong>, <strong>Khách hàng thân thiết</strong> và <strong>Cộng tác viên</strong> là 3 chiến lược quan trọng 
     Website Kiên Giang hướng đến để mở rộng và chiếm lĩnh thị trường. Vậy nên chúng tôi sẽ duy trì chính sách Ctv lâu dài và sẽ không đơn phương chấm dứt hợp tác với Ctv.
 </p>
 <div>Tuy nhiên, trong một số trường hợp nhất định chúng tôi sẽ chấm dứt hợp tác với một hoặc một vài Ctv nếu vi phạm các quy định như sau:</div>

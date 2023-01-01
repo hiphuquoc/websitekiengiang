@@ -24,10 +24,6 @@
             @stack('bottom')
         </div> --}}
 
-        <!-- === START:: Zalo Ring === -->
-        @include('main.snippets.zaloRing')
-        <!-- === END:: Zalo Ring === -->
-
         <div class="bottom">
             <div id="smoothScrollToTop" class="gotoTop" onclick="javascript:smoothScrollToTop();" style="display: block;">
                 <i class="fas fa-chevron-up"></i>

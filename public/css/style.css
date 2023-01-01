@@ -12,9 +12,9 @@ html {
 body {
   font-size: 1rem;
   line-height: 1.8rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: "Montserrat Alternates", "mt", "SVN-Gilroy Bold", serif;
-  color: #345;
+  color: #456;
   background: #EDF2F7;
 }
 
@@ -50,10 +50,10 @@ ul.withIconCheck li:before {
 }
 
 h2 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "mt", "SVN-Gilroy", sans-serif;
   margin-bottom: 1rem;
-  font-size: 2rem;
-  line-height: 3.2rem;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 }
 @media (max-width: 990px) {
   h2 {
@@ -88,7 +88,7 @@ h3, h4 {
 }
 
 h5, h6 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 
 .pageContent h2, .pageContent h3, .pageContent h4, .pageContent h5, .pageContent h6 {
@@ -210,13 +210,13 @@ blockquote em {
 }
 
 .button {
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 2rem;
   background: #069A8E;
   display: inline-block;
   font-family: "Montserrat Alternates", "mt", "SVN-Gilroy Bold", serif;
   font-weight: 600;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 100px;
   cursor: pointer;
   font-size: 1.1rem;
 }
@@ -224,9 +224,13 @@ blockquote em {
   outline: none;
   background: rgba(6, 154, 142, 0.85);
 }
+.button i {
+  margin-left: -0.25rem;
+  margin-right: 0.75rem;
+}
 .button.cancel {
   background: #dee2e6;
-  color: #345;
+  color: #456;
 }
 .button.cancel:hover {
   outline: none;
@@ -318,6 +322,16 @@ label.required:after {
   .hide-990 {
     display: none;
   }
+}
+
+.column {
+  display: flex;
+}
+.column.two .column_item {
+  width: 50%;
+}
+.column.two .column_item:not(:first-child) {
+  margin-left: 1.25rem;
 }
 
 /* font */
@@ -554,7 +568,7 @@ label.required:after {
   z-index: -1;
 }
 .slideBox_body_left h2, .slideBox_body_left h3 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
   line-height: 4.2rem;
   margin-bottom: 1.5rem;
   font-size: 3.2rem;
@@ -791,7 +805,7 @@ label.required:after {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.75rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 @media (max-width: 990px) {
   .aboutUsBox h2 {
@@ -882,7 +896,7 @@ label.required:after {
 .aboutUsSortBox_item_number {
   margin-right: 0.5rem;
   font-size: 2rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
   letter-spacing: 1px;
   font-weight: 700;
   color: #F7FF93;
@@ -934,7 +948,7 @@ label.required:after {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.75rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 @media (max-width: 990px) {
   .priceBox_head h2, .priceBox_head h3 {
@@ -956,7 +970,7 @@ label.required:after {
   }
 }
 .priceBox_head_desc {
-  color: #345;
+  color: #456;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
@@ -998,7 +1012,7 @@ label.required:after {
 .priceBox_body_item_title h3, .priceBox_body_item_title h4 {
   padding: 0.75rem 0;
   margin-bottom: 0.5rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
   border-radius: 10px 10px 0 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -1020,7 +1034,7 @@ label.required:after {
   height: 30px;
 }
 .priceBox_body_item_price_new {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   color: red;
@@ -1062,7 +1076,7 @@ label.required:after {
   transform: rotate(10deg);
   font-weight: bold;
   font-size: 1.7rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
   color: red;
   opacity: 0.8;
   letter-spacing: -1px;
@@ -1137,7 +1151,7 @@ label.required:after {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.75rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 @media (max-width: 990px) {
   .faqBox_head h2, .faqBox_head h3 {
@@ -1159,7 +1173,7 @@ label.required:after {
   }
 }
 .faqBox_head_desc {
-  color: #345;
+  color: #456;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
@@ -1217,7 +1231,7 @@ label.required:after {
 .faqBox_body_item_answer {
   padding: 1rem 1.5rem;
   font-size: 1rem;
-  color: #345;
+  color: #456;
 }
 .faqBox_body_item_answer ul {
   margin-left: 1.5rem;
@@ -1264,7 +1278,7 @@ label.required:after {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.75rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 @media (max-width: 990px) {
   .stepByStepBox_head h2, .stepByStepBox_head h3 {
@@ -1286,7 +1300,7 @@ label.required:after {
   }
 }
 .stepByStepBox_head_desc {
-  color: #345;
+  color: #456;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
@@ -1320,7 +1334,7 @@ label.required:after {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.75rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 @media (max-width: 990px) {
   .specialBox_head h2, .specialBox_head h3 {
@@ -1342,7 +1356,7 @@ label.required:after {
   }
 }
 .specialBox_head_desc {
-  color: #345;
+  color: #456;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
@@ -1518,7 +1532,7 @@ label.required:after {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.75rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 @media (max-width: 990px) {
   .aboutSeoBox_content_title h2, .aboutSeoBox_content_title h3 {
@@ -1627,7 +1641,7 @@ label.required:after {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.75rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 @media (max-width: 990px) {
   .aboutSpeedBox_content_title h2, .aboutSpeedBox_content_title h3 {
@@ -1750,7 +1764,7 @@ label.required:after {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.75rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 @media (max-width: 990px) {
   .aboutExplainBox_content_title h2, .aboutExplainBox_content_title h3 {
@@ -1866,7 +1880,7 @@ label.required:after {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.75rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 @media (max-width: 990px) {
   .aboutTemplateBox_content_title h2, .aboutTemplateBox_content_title h3 {
@@ -1986,7 +2000,7 @@ label.required:after {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 2.75rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
 }
 @media (max-width: 990px) {
   .aboutQuanlityBox_content_title h2, .aboutQuanlityBox_content_title h3 {
@@ -2093,7 +2107,7 @@ label.required:after {
 .footerBox_item_title {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;

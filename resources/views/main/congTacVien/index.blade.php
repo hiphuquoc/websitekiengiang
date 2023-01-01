@@ -3,6 +3,8 @@
 
 @endpush
 @section('content')
+    <!-- === START:: Header Top === -->
+    @include('main.snippets.headerTop')
     <!-- Header Main -->
     @include('main.snippets.headerMain')
     <!-- Nội dung -->
