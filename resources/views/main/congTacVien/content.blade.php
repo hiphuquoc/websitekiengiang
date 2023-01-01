@@ -12,7 +12,9 @@
         <form id="formSubmit" method="post">
             <div id="js_loadNotice_write" class="formCTVBox_right_form">
                 <div class="formCTVBox_right_form_head">
-                    <h2>Kinh doanh cùng chúng tôi</h2>
+                    <div class="button js_toggleModal" style="width:100%;border-radius:5px;">Đăng nhập</div>
+                    <div class="lineWithText"><div>Hoặc</div></div>
+                    <h2>Đăng ký kinh doanh cùng chúng tôi</h2>
                 </div>
                 <div class="formCTVBox_right_form_body">
                     <div class="formCTVBox_right_form_body_item"> 
@@ -53,7 +55,7 @@
                     </div>
                 </div>
                 <div class="formCTVBox_right_form_footer">
-                    <div class="button" onClick="submitForm('formSubmit')"><i class="fa-solid fa-pencil"></i>Đăng ký ngay</div>
+                    <div class="button" onClick="submitFormRegistry('formSubmit')"><i class="fa-solid fa-pencil"></i>Đăng ký ngay</div>
                 </div>
                 
             </div>

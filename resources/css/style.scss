@@ -2094,7 +2094,6 @@ $height_headerMain : 55px;
     width: 100%;
     height: 100%;
     z-index: 999999;
-    // display: flex;
     align-items: center;
     justify-content: center;
     &_bg {
@@ -2106,19 +2105,23 @@ $height_headerMain : 55px;
         background: rgba(30,41,51,0.45);
     }
     &_box {
-        max-width: 700px;
+        max-width: 600px;
         width: calc(100% - 2rem);
         margin: 0 auto;
         background: #fff;
         border-radius: 10px;
-        padding: 1rem 1.5rem;
-        z-index: 1;
+        padding: 1.5rem;
+        z-index: 99;
         position: relative;
+        transform-style: preserve-3d;
         &_head {
-            padding-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             font-weight: bold;
+            font-family: $fontTitleContent;
+            color: $colorLv2;
+            text-align: center;
         }
         &_body {
             margin-bottom: 1.5rem;
@@ -2144,6 +2147,28 @@ $height_headerMain : 55px;
                     margin-left: 1rem;
                 }
             }
+        }
+        &:before {
+            position: absolute;
+            top: -75px;
+            left: -50px;
+            content: '';
+            width: 250px;
+            height: 250px;
+            background: url('/storage/images/bg-image-form-1.png') no-repeat;
+            background-size: 100% 100%;
+            transform: translateZ(-1px);
+        }
+        &:after {
+            position: absolute;
+            bottom: -75px;
+            right: -75px;
+            content: '';
+            width: 250px;
+            height: 250px;
+            background: url('/storage/images/bg-image-form-2.png') no-repeat;
+            background-size: 100% 100%;
+            transform: translateZ(-1px);
         }
     }
     @media(max-width: 577px){
@@ -2181,7 +2206,7 @@ $height_headerMain : 55px;
         &_form {
             background: #fff;
             box-shadow: 10px 10px 30px -25px $colorLv2;
-            padding: 0.75rem 1.5rem 1.5rem;
+            padding: 1.5rem;
             margin-top: -400px;
             border-radius: 15px;
             &_head {
@@ -2194,7 +2219,7 @@ $height_headerMain : 55px;
                 }
             }
             &_body {
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
                 &_item {
                     &:not(:first-child){
                         margin-top: 0.75rem;
@@ -2203,6 +2228,30 @@ $height_headerMain : 55px;
             }
             &_footer {
                 text-align: right;
+            }
+        }
+        .lineWithText {
+            margin-top: 0.75rem;
+            width: 100%;
+            text-align: center;
+            font-size: 0.95rem;
+            font-weight: 500;
+            position: relative;
+            color: $colorDesc;
+            > * {
+                display: inline-block;
+                background: #fff;
+                z-index: 1;
+                position: relative;
+                padding: 0 0.75rem;
+            }
+            &:after {
+                content: "";
+                border-top: 1px solid $bg-05;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 50%;
             }
         }
     }
@@ -2227,6 +2276,31 @@ $height_headerMain : 55px;
         &_right {
             &_form {
                 padding: 0.5rem 1rem 1rem;
+            }
+        }
+    }
+}
+.formLogin {
+    &_logo {
+        text-align: center;
+        margin-bottom: 1rem;
+        img {
+            max-width: 300px;
+        }
+    }
+    &_text {
+        margin-bottom: 1rem;
+        &_title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: $colorLv2;
+        }
+    }
+    &_form {
+        &_item {
+            &:not(:first-child){
+                margin-top: 1rem;
             }
         }
     }
