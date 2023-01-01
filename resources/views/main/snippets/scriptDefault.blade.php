@@ -7,7 +7,7 @@
             $(this).css('opacity', 0);
         });
 
-        buildTocContentMain('js_buildTocContentSidebar_element');
+        buildTocContentMain('js_contentBox');
     });
     /* fixed menu khi scroll đối với giao diện nhỏ hơn 990px */ 
     $(window).scroll(function(){

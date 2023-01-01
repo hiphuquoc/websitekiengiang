@@ -54,7 +54,7 @@
         @include('main.snippets.headerTop')
         <!-- === END:: Header Top === -->
         @include('main.home.slide')
-        <div id="js_buildTocContentSidebar_element">
+        <div id="js_contentBox">
             <!-- Về chúng tôi -->
             <div class="sectionBox">
                 <div class="container">
@@ -121,9 +121,11 @@
 
             <!-- tocContent main -->
             <div id="tocContentMain"></div>
-            <!-- Form -->
-            @include('main.home.form')
+            
         </div>
+
+        <!-- Form -->
+        @include('main.home.form')
     </div>
 @endsection
 @push('scriptCustom')
