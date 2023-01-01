@@ -4,13 +4,13 @@
             'icon'          => '<i class="fa-brands fa-google"></i>',
             'color'         => 'green',
             'title'         => 'Tất cả trong một',
-            'description'   => 'Dịch vụ <strong>thiết kế Website</strong> của chúng tôi đã bao gồm: tư vấn chọn tên miền thương hiệu phù hợp, đăng ký và quản lí hosting, SSL, Content, Banner, Cài đặt Google Analytics, Google Console, Backup định kỳ, vv. (có thể tùy chọn trừ ra)'
+            'description'   => 'Dịch vụ <strong>thiết kế Website</strong> của chúng tôi đã bao gồm: tư vấn chọn tên miền thương hiệu phù hợp, đăng ký và quản lí hosting, SSL, Content, Banner, Cài đặt Google Analytics, Google Console, Backup định kỳ, vv. (có thể trừ ra)'
         ],
         [
             'icon'          => '<i class="fa-regular fa-lightbulb"></i>',
             'color'         => 'yellow',
             'title'         => 'Website là ý tưởng của bạn',
-            'description'   => 'Nếu bạn có bất kỳ ý tưởng hoặc mẫu thiết kế nào, Chúng tôi sẽ luôn sẵn sàng tiếp thu, tư vấn và phát triển thêm để hiện thực hóa ý tưởng của bạn và tạo ra sản phẩm phù hợp nhất với nhu cầu của bạn.'
+            'description'   => 'Nếu bạn có bất kỳ ý tưởng hoặc ưng mẫu thiết kế nào, Chúng tôi sẽ tiếp thu, tư vấn và phát triển thêm để hiện thực hóa ý tưởng đó và tạo ra sản phẩm phù hợp nhất với nhu cầu của bạn.'
         ],
         [
             'icon'          => '<i class="fa-solid fa-wand-magic-sparkles"></i>',
@@ -22,7 +22,7 @@
             'icon'          => '<i class="fa-solid fa-rocket"></i>',
             'color'         => 'red',
             'title'         => 'Tốc độ nhanh',
-            'description'   => 'Được xây dựng trên nền tảng công nghệ hiện đại, kỹ thuật mới nhất, code được tối ưu tối đa nên gọn, nhẹ. Website hoạt động hiệu quả và tốc độ tải trang cực nhanh.'
+            'description'   => 'Được xây dựng trên nền tảng công nghệ hiện đại, kỹ thuật mới nhất, code được viết riêng nên không có code thừa và tối ưu tối đa, gọn, nhẹ. Website hoạt động hiệu quả và tốc độ tải trang nhanh.'
         ],
         [
             'icon'          => '<i class="fa-solid fa-mobile-screen-button"></i>',
