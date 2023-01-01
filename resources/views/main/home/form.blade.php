@@ -55,11 +55,11 @@
                 /* hiển thị */
                 element.css('display', 'flex');
                 $('body').css('overflow', 'hidden');
-                $('#js_contentBox').addClass('blurBackground');
+                $('#js_blurBackground').addClass('blurBackground');
             }else {
                 element.css('display', 'none');
                 $('body').css('overflow', 'unset');
-                $('#js_contentBox').removeClass('blurBackground');
+                $('#js_blurBackground').removeClass('blurBackground');
             }
         }
 

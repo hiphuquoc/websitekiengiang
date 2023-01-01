@@ -123,11 +123,12 @@
             <div id="tocContentMain"></div>
             
         </div>
-
-        <!-- Form -->
-        @include('main.home.form')
     </div>
 @endsection
+@push('modal')
+    <!-- Form -->
+    @include('main.home.form')
+@endpush
 @push('scriptCustom')
     <script type="text/javascript">
         // $(document).ready(function(){
