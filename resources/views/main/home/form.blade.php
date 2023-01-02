@@ -1,7 +1,7 @@
 <div id="formRequestWebsite" class="formModalBox">
-    <form id="formModalSubmit" method="get" style="width:100%;">
-        <div class="formModalBox_bg js_toggleModalWebsite"></div>
-        <div id="js_loadNotice_write" class="formModalBox_box">
+    <div class="formModalBox_bg js_toggleModalWebsite"></div>
+    <div class="formModalBox_box">
+        <form id="formModalSubmit" method="get" style="width:100%;">
             <div class="formModalBox_box_head">Yêu cầu thiết kế Website</div>
             <div class="formModalBox_box_body">
                 <div class="formModalBox_box_body_item">
@@ -34,8 +34,8 @@
                     Gửi yêu cầu
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>
 @push('scriptCustom')
     <script type="text/javascript">
@@ -63,26 +63,12 @@
             }
         }
 
-        function loadNotice(type, idWrite){
-            $.ajax({
-                url         : '{{ route("main.loadNotice") }}',
-                type        : 'get',
-                dataType    : 'html',
-                data        : {
-                    type    : 'success'
-                },
-                success     : function(data){
-                    $('#'+idWrite).html(data);
-                }
-            });
-        }
-
         /* submit form */
         function submitForm(idForm){
             const error     = validateForm(idForm);
             if(error.length==0){
                 /* tải loading */ 
-                loadLoading('js_loadNotice_write');
+                loadLoading(idForm);
                 /* lấy dữ liệu truyền đi */
                 var data    = $('#'+idForm).serializeArray();
                 $.ajax({
@@ -96,7 +82,7 @@
                     success     : function(response){
                         setTimeout(() => {
                             /* thông báo */
-                            loadNotice(response, 'js_loadNotice_write');
+                            $('#'+idForm).html(response);
                         }, 500);
                     }
                 });

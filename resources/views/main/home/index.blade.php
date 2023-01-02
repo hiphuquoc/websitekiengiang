@@ -49,7 +49,7 @@
 <!-- ===== END:: SCHEMA ===== -->
 @endpush
 @section('content')
-    <div style="overflow: hidden;">
+    <div style="overflow:hidden;">
         <!-- === START:: Header Top === -->
         @include('main.snippets.headerTop')
         <!-- === END:: Header Top === -->
@@ -121,18 +121,17 @@
 
             <!-- tocContent main -->
             <div id="tocContentMain"></div>
-            
         </div>
     </div>
 @endsection
+@push('modal')
+    <!-- Form -->
+    @include('main.home.form')
+@endpush
 @push('bottom')
     <!-- === START:: Zalo Ring === -->
     @include('main.snippets.zaloRing')
     <!-- === END:: Zalo Ring === -->
-@endpush
-@push('modal')
-    <!-- Form -->
-    @include('main.home.form')
 @endpush
 @push('scriptCustom')
     <script type="text/javascript">

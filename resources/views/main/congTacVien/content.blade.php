@@ -9,10 +9,10 @@
         </p>
     </div>
     <div class="formCTVBox_right">
-        <form id="formSubmit" method="post">
-            <div id="js_loadNotice_write" class="formCTVBox_right_form">
+        <div class="formCTVBox_right_form">
+            <form id="formRegistry" method="post">
                 <div class="formCTVBox_right_form_head">
-                    <div class="button js_toggleModal" style="width:100%;border-radius:5px;">Đăng nhập</div>
+                    <div class="button js_toggleModalLogin" style="width:100%;border-radius:5px;">Đăng nhập</div>
                     <div class="lineWithText"><div>Hoặc</div></div>
                     <h2>Đăng ký kinh doanh cùng chúng tôi</h2>
                 </div>
@@ -55,11 +55,11 @@
                     </div>
                 </div>
                 <div class="formCTVBox_right_form_footer">
-                    <div class="button" onClick="submitFormRegistry('formSubmit')"><i class="fa-solid fa-pencil"></i>Đăng ký ngay</div>
+                    <div class="button" onClick="submitFormRegistry('formRegistry')"><i class="fa-solid fa-pencil"></i>Đăng ký ngay</div>
                 </div>
-                
-            </div>
-        </form>
+            </form>
+            
+        </div>
     </div>
 </div>
 
@@ -131,15 +131,15 @@
 @push('scriptCustom')
     <script type="text/javascript">
         /* submit form */
-        function submitForm(idForm){
-            const error     = validateForm(idForm);
+        function submitFormRegistry(idForm){
+            const error     = validateFormRegistry(idForm);
             if(error.length==0){
                 /* tải loading */ 
-                loadLoading('js_loadNotice_write');
+                loadLoading(idForm);
                 /* lấy dữ liệu truyền đi */
                 var data    = $('#'+idForm).serializeArray();
                 $.ajax({
-                    url         : '{{ route("ajax.submitFormRegistryCtv") }}',
+                    url         : '{{ route("ajax.registryCtv") }}',
                     type        : 'post',
                     dataType    : 'html',
                     data        : {
@@ -149,7 +149,7 @@
                     success     : function(response){
                         setTimeout(() => {
                             /* thông báo */
-                            loadNotice(response, 'js_loadNotice_write');
+                            $('#'+idForm).html(response);
                         }, 500);
                     }
                 });
@@ -161,7 +161,7 @@
             }
         }
         /* validate form */
-        function validateForm(idForm){
+        function validateFormRegistry(idForm){
             let error       = [];
             /* input required không được bỏ trống */
             $('#'+idForm).find('input[required]').each(function(){
@@ -183,20 +183,6 @@
                 dataType    : 'html',
                 success     : function(response){
                     $('#'+idWrite).html(response);
-                }
-            });
-        }
-
-        function loadNotice(type, idWrite){
-            $.ajax({
-                url         : '{{ route("main.loadNotice") }}',
-                type        : 'get',
-                dataType    : 'html',
-                data        : {
-                    type    : 'success'
-                },
-                success     : function(data){
-                    $('#'+idWrite).html(data);
                 }
             });
         }

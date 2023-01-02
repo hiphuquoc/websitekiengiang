@@ -245,7 +245,7 @@ input, textarea, select {
   padding: 0.7rem 1rem;
   width: 100%;
   font-size: 1rem;
-  font-family: "Montserrat Alternates", "mt", "SVN-Gilroy Bold", serif;
+  font-family: "mt", "SVN-Gilroy", sans-serif;
   border-radius: 7px;
   border: 1px solid #ced4da;
 }
@@ -442,9 +442,10 @@ label.required:after {
   color: #f1f1f1;
   font-size: 0.925rem;
   font-weight: 600;
+  cursor: pointer;
 }
 .headerTop_item_list_item:hover {
-  color: #fff;
+  color: #F7FF93;
 }
 .headerTop_item_list_item:not(:last-child) {
   margin-right: 1rem;

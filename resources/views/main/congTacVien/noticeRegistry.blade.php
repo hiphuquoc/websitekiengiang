@@ -5,8 +5,8 @@
         <img src="/images/svg/check-icon.svg" alt="Gửi yêu câu thiết kế website thành công" title="Gửi yêu câu thiết kế website thành công" />
     </div>
 </div>
-<div class="formModalBox_box_footer">
+{{-- <div class="formModalBox_box_footer">
     <div class="formModalBox_box_footer_item button cancel" onclick="toggleModalWebsite('formRequestWebsite')">
         Đóng
     </div>
-</div>
+</div> --}}

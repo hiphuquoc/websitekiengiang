@@ -31,6 +31,16 @@ class Ctv extends Model {
         return $id;
     }
 
+    public static function updateItem($id, $params){
+        $flag           = false;
+        if(!empty($id)&&!empty($params)){
+            $model      = self::find($id);
+            foreach($params as $key => $value) $model->{$key}  = $value;
+            $flag       = $model->update();
+        }
+        return $flag;
+    }
+
     // public function keywords() {
     //     return $this->hasMany(\App\Models\Keyword::class, 'seo_id', 'id');
     // }

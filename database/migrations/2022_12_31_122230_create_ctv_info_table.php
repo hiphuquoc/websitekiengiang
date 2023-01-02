@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('code')->nullable();
             $table->text('code_parent')->nullable();
             $table->text('name');
+            $table->text('password')->nullable();
             $table->string('phone', 20);
             $table->text('email')->nullable();
             $table->text('identity');
