@@ -1,6 +1,6 @@
 <div class="aboutSeoBox left">
     <div class="aboutSeoBox_image">
-        <img class="effectLeftToRight" src="/images/about-seo-1.jpg" alt="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" />
+        <img class="effectLeftToRight" src="/storage/images/about-seo-1.jpg" alt="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" />
     </div>
     <div class="aboutSeoBox_content effectFadeIn">
         <div class="aboutSeoBox_content_title">
@@ -9,7 +9,7 @@
         <div class="aboutSeoBox_content_text">
             <h3>Khách hàng bắt đầu tìm kiếm dịch vụ họ cần trên Google...</h3>
             <div>Và bạn là kết quả đầu tiên được Google gợi ý cho khách hàng.</div>
-            <img class="formatMobile" src="/images/about-seo-1.jpg" title="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" alt="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" />
+            <img class="formatMobile" src="/storage/images/about-seo-1.jpg" title="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" alt="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" />
             <p></p>
             <h3>Thật tuyệt vời phải không nào?... Bạn có thể tiếp cận hàng ngàn khách hàng tiềm năng mỗi ngày</h3>
             <div>Để đạt được điều đó bạn cần phải <strong>tranh top Google.</strong></div>
@@ -23,7 +23,7 @@
 </div>
 <div class="aboutSeoBox right">
     <div class="aboutSeoBox_image">
-        <img class="effectLeftToRight" src="/images/about-seo-2.jpg" alt="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" />
+        <img class="effectLeftToRight" src="/storage/images/about-seo-2.jpg" alt="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" />
     </div>
     <div class="aboutSeoBox_content">
         {{-- <div class="aboutSeoBox_content_title">

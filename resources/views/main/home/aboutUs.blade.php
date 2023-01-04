@@ -17,5 +17,6 @@
             Chúng tôi hiểu rằng <strong style="background:#F7FF93;">"thành công và thịnh vượng của khách hàng là sự phát triển của chúng tôi"</strong>, vì vậy chúng tôi luôn hướng tới mục tiêu đem lại những giá trị tốt nhất cho khách hàng. <strong>Website {{ ucwords(env('LOCAL_VN')) }}</strong> sẽ là nơi tuyệt vời để bạn xây dựng, gởi gắm "đứa con tinh thần" của mình, và chúng tôi hân hạnh là đối tác đáng tin cậy đồng hành cùng bạn trong việc thực hiện ước mơ này.
         </p>
     </div>
-    <img src="/images/tam-nhin-2.png" alt="giới thiệu thiết kế website {{ ucwords(env('LOCAL_VN')) }}" title="giới thiệu thiết kế website {{ ucwords(env('LOCAL_VN')) }}" />
+    <div class="aboutUsBox_img"></div>
+    {{-- <img src="/storage/images/tam-nhin-2.png" alt="giới thiệu thiết kế website {{ ucwords(env('LOCAL_VN')) }}" title="giới thiệu thiết kế website {{ ucwords(env('LOCAL_VN')) }}" /> --}}
 </div>

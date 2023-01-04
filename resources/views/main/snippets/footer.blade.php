@@ -1,6 +1,6 @@
 <div id="lien-he-thiet-ke-website-kien-giang" class="footerBox">
     <div class="footerBox_wave">
-        <img src="/images/svg/bg-wave-2.png" alt="Thiết kế Website Kiên Giang" title="Thiết kế Website Kiên Giang" />
+        <img src="/storage/images/bg-wave-2.png" alt="Thiết kế Website Kiên Giang" title="Thiết kế Website Kiên Giang" />
     </div>
     <div class="container">
         <div class="footerBox_item">
@@ -31,6 +31,6 @@
 </div>
 <div class="copyright">
     <div class="container">
-        © 2022 - Bản quyền Website Kiên Giang - Thiết kế và phát triển bởi Phạm Văn Phú!
+        © 2023 - Bản quyền Website Kiên Giang - Thiết kế và phát triển bởi Phạm Văn Phú!
     </div>
 </div>

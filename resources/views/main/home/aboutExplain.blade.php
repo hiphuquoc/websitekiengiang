@@ -14,8 +14,8 @@
             <p></p>
             <div class="aboutExplainBox_content_text_column">
                 <div class="aboutExplainBox_content_text_column_image">
-                    <img class="effectLeftToRight" src="/images/about-expland-1.jpg" alt="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" />
-                    {{-- <img class="custom" src="/images/icon-quanlity.png" alt="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" style="box-shadow:none;" /> --}}
+                    <img class="effectLeftToRight" src="/storage/images/about-expland-1.jpg" alt="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" />
+                    {{-- <img class="custom" src="/storage/images/icon-quanlity.png" alt="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" style="box-shadow:none;" /> --}}
                 </div>
                 <div class="aboutExplainBox_content_text_column_text effectBottomToTop">
                     <h3>Dễ dàng phát triển thêm các tính năng nếu cần thiết</h3>
@@ -28,7 +28,7 @@
                         Đối với các tính năng lớn, phức tạp, mất nhiều thời gian hơn sẽ chỉ tính phí của "<strong>khách hàng thân thiết</strong>".
                     </blockquote>
                     <p></p>
-                    <img class="format" src="/images/icon-grow-1.png" alt="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" style="box-shadow:none;">
+                    <img class="format" src="/storage/images/icon-grow-1.png" alt="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế Website chuẩn seo {{ ucwords(env('LOCAL_VN')) }}" style="box-shadow:none;">
                 </div>
             </div>
         </div>  

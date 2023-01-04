@@ -28,7 +28,7 @@
                         @endif
                         <div class="priceBox_body_item_price_saleoff">
                             <div class="saleoffBox effectBottomToTop">
-                                <img src="/images/giam-gia-1.png" title="thiết kế website {{ ucwords(env('LOCAL_VN')) }} khuyến mãi" alt="thiết kế website {{ ucwords(env('LOCAL_VN')) }} khuyến mãi" />
+                                <img src="/storage/images/giam-gia-1.png" title="thiết kế website {{ ucwords(env('LOCAL_VN')) }} khuyến mãi" alt="thiết kế website {{ ucwords(env('LOCAL_VN')) }} khuyến mãi" />
                                 <div class="saleoffBox_number">
                                     {{ $item->sale_off }}% OFF
                                 </div>
@@ -58,7 +58,7 @@
                     </div>
                     {{-- <div class="priceBox_body_item_saleoff">
                         <div class="saleoffBox effectBottomToTop">
-                            <img src="/images/giam-gia-1.png" title="thiết kế website {{ ucwords(env('LOCAL_VN')) }} khuyến mãi" alt="thiết kế website {{ ucwords(env('LOCAL_VN')) }} khuyến mãi" />
+                            <img src="/storage/images/giam-gia-1.png" title="thiết kế website {{ ucwords(env('LOCAL_VN')) }} khuyến mãi" alt="thiết kế website {{ ucwords(env('LOCAL_VN')) }} khuyến mãi" />
                             <div class="saleoffBox_number">
                                 {{ $item->sale_off }}% OFF
                             </div>

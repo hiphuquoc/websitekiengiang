@@ -1,7 +1,7 @@
 @php
     $arrayData  = [
         0 => [
-            'img'       => '/images/quy-trinh-thiet-ke-website-1.png',
+            'img'       => '/storage/images/quy-trinh-thiet-ke-website-1.png',
             'title'     => 'Tư vấn và Thống nhất yêu cầu',
             'content'   => '<ul>
                                 <li>Tư vấn khách hàng về yêu cầu tính năng và giao diện Website.</li>
@@ -10,7 +10,7 @@
                             </ul>'
         ],
         1 => [
-            'img'       => '/images/quy-trinh-thiet-ke-website-2.png',
+            'img'       => '/storage/images/quy-trinh-thiet-ke-website-2.png',
             'title'     => 'Thiết kế giao diện',
             'content'   => '<ul>
                                 <li>Designer tư vấn giao diện và bố cục cho bạn.</li>
@@ -19,7 +19,7 @@
                             </ul>'
         ],
         2 => [
-            'img'       => '/images/quy-trinh-thiet-ke-website-3.png',
+            'img'       => '/storage/images/quy-trinh-thiet-ke-website-3.png',
             'title'     => 'Lập trình giao diện và tính năng',
             'content'   => '<ul>
                                 <li>Lập trình giao diện và tính năng theo thiết kế.</li>
@@ -27,7 +27,7 @@
                             </ul>'
         ],
         3 => [
-            'img'       => '/images/quy-trinh-thiet-ke-website-4.png',
+            'img'       => '/storage/images/quy-trinh-thiet-ke-website-4.png',
             'title'     => 'Nghiệm thu và bàn giao',
             'content'   => '<ul>
                                 <li>Public Website lên hosting theo địa chỉ domain bạn đã chọn.</li>

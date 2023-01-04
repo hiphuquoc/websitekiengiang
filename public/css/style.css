@@ -536,7 +536,7 @@ label.required:after {
   display: flex;
   width: 195px;
   height: 35px;
-  background: url("/images/logo-website-kien-giang-fff.png") no-repeat;
+  background: url("/storage/images/logo-website-kien-giang-fff.png") no-repeat;
   background-size: 100% 100%;
 }
 @media (max-width: 990px) {
@@ -854,39 +854,35 @@ label.required:after {
   position: relative;
   z-index: 2;
 }
-.aboutUsBox img {
+.aboutUsBox_img {
+  background: url("/storage/images/tam-nhin-2.png") no-repeat;
+  background-size: 100% auto;
   position: absolute;
-  top: -120px;
-  right: -120px;
-  width: 320px;
+  top: -80px;
+  right: -50px;
+  width: 180px;
+  height: 180px;
   z-index: 1;
 }
 @media (max-width: 1199px) {
-  .aboutUsBox img {
-    right: -60px;
+  .aboutUsBox_img {
+    width: 160px;
+    height: 160px;
   }
 }
 @media (max-width: 990px) {
   .aboutUsBox {
     padding: 1.25rem;
   }
-  .aboutUsBox img {
-    width: 250px;
-    top: -90px;
-  }
-}
-@media (max-width: 766px) {
-  .aboutUsBox {
-    padding: 1rem;
-  }
-  .aboutUsBox img {
-    width: 200px;
+  .aboutUsBox_img {
+    width: 140px;
+    height: 140px;
     top: -60px;
-    right: -40px;
+    right: -30px;
   }
 }
 @media (max-width: 577px) {
-  .aboutUsBox img {
+  .aboutUsBox_img {
     display: none;
   }
 }
@@ -1769,9 +1765,11 @@ label.required:after {
 }
 .aboutSpeedBox_content_text .columnFormat_image {
   width: calc(50% - 2.5rem);
+  text-align: center;
 }
 .aboutSpeedBox_content_text .columnFormat_image img {
   width: calc(100% + 100px);
+  max-width: 700px;
 }
 .aboutSpeedBox_content_text .format > *:before {
   font-family: "Font Awesome 6 Free";
@@ -1901,9 +1899,11 @@ label.required:after {
 .aboutExplainBox_content_text_column_image {
   position: relative;
   width: calc(50% - 2.5rem);
+  text-align: center;
 }
 .aboutExplainBox_content_text_column_image img {
   box-shadow: 10px 10px 30px -25px #069A8E;
+  max-width: 600px;
 }
 @media (max-width: 1199px) {
   .aboutExplainBox_content_text_column_text .format {
@@ -2055,6 +2055,8 @@ label.required:after {
 .aboutQuanlityBox_image {
   width: 45%;
   position: relative;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .aboutQuanlityBox_image img {
   box-shadow: 10px 10px 30px -25px #069A8E;

@@ -52,7 +52,7 @@
         </div>
     </div>
     <div class="slideBox_bottom">
-        <img src="/images/bg-wave-1.png" alt="Thiết kế website kiên giang" title="Thiết kế website kiên giang" />
+        <img src="/storage/images/bg-wave-1.png" alt="Thiết kế website kiên giang" title="Thiết kế website kiên giang" />
     </div>
     <video id="js_loadVideoBackground" class="slideBox_video" type="video/mp4" autoplay muted loop>
         <!-- js loadVideoBackground -->

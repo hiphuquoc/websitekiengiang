@@ -29,13 +29,13 @@
                     <div class="formatMobile"><strong>Thiết kế Website {{ ucwords(env('LOCAL_VN')) }}</strong> hiểu được tầm quan trọng của những yếu tố này và có đủ trình độ kỹ thuật, kinh nghiệm để tạo ra những sản phẩm tốt nhất dành cho bạn! Hãy để chúng tôi giúp bạn xây dựng một website chuyên nghiệp và thành công.</div>
                 </div>
                 <div id="imageSpeedDropdown" class="columnFormat_image">
-                    <img src="/images/about-speed-2.png" alt="thiết kế website tối ưu trải nghiệm người dùng {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website tối ưu trải nghiệm người dùng {{ ucwords(env('LOCAL_VN')) }}" />
+                    <img src="/storage/images/about-speed-2.png" alt="thiết kế website tối ưu trải nghiệm người dùng {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website tối ưu trải nghiệm người dùng {{ ucwords(env('LOCAL_VN')) }}" />
                 </div>
             </div>
         </div>  
     </div>
     <div id="effectRocket" class="aboutSpeedBox_image">
-        <img src="/images/about-speed-1.webp" alt="thiết kế website tối ưu trải nghiệm người dùng {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website tối ưu trải nghiệm người dùng {{ ucwords(env('LOCAL_VN')) }}" />
+        <img src="/storage/images/about-speed-1.webp" alt="thiết kế website tối ưu trải nghiệm người dùng {{ ucwords(env('LOCAL_VN')) }}" title="thiết kế website tối ưu trải nghiệm người dùng {{ ucwords(env('LOCAL_VN')) }}" />
     </div>
 </div>
 @push('scriptCustom')
