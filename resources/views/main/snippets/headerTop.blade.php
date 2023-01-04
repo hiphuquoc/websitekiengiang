@@ -6,7 +6,7 @@
                Tư vấn khách hàng
             </a> --}}
             <div class="headerTop_item_list_item" style="font-size:1rem;">
-               Xin chào...! Có phải bạn đang cần dịch vụ Website chất lượng?
+               Xin chào, Có phải bạn đang cần dịch vụ Website chất lượng?
             </div>
          </div>
          <div class="headerTop_item_language">

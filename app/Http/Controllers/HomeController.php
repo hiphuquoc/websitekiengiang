@@ -10,9 +10,9 @@ class HomeController extends Controller {
     public static function home(){
         $item   = Seo::select('*')
                     ->where('type', 'home')
+                    ->with('faqs', 'service.prices')
                     ->first();
-        $faqs   = Faq::all();
-        return view('main.home.index', compact('item', 'faqs'));
+        return view('main.home.index', compact('item'));
     }
 
     public function buildTocContentMain(Request $request){

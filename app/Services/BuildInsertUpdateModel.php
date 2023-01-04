@@ -5,12 +5,12 @@ namespace App\Services;
 use Illuminate\Support\Facades\Auth;
 
 class BuildInsertUpdateModel {
-    public static function buildArrayTableRequestInfo($data, $type, $customerId){
+    public static function buildArrayTableRequestInfo($data, $customerId){
         $result                                 = [];
         if(!empty($data)){
             $result['customer_info_id']         = $customerId;
-            $result['reference_type']           = $type;
-            $result['reference_id']             = $data['website'];
+            $result['service_info_id']          = $data['service_info_id'];
+            $result['service_price_id']         = $data['service_price_id'];
             $result['code']                     = $data['code'] ?? null;
             $result['note']                     = $data['customer_note'] ?? null;
         }

@@ -79,13 +79,13 @@ class Seo extends Model {
         return $url;
     }
 
-    // public function keywords() {
-    //     return $this->hasMany(\App\Models\Keyword::class, 'seo_id', 'id');
-    // }
+    public function faqs() {
+        return $this->hasMany(\App\Models\Faq::class, 'reference_id', 'id');
+    }
 
-    // public function contentspin() {
-    //     return $this->hasOne(\App\Models\Contentspin::class, 'seo_id', 'id');
-    // }
+    public function service() {
+        return $this->hasOne(\App\Models\Service::class, 'seo_id', 'id');
+    }
 
     // public function checkSeos() {
     //     return $this->hasMany(\App\Models\CheckSeo::class, 'seo_id', 'id');

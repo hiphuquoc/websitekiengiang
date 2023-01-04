@@ -2,6 +2,8 @@
     <div class="formModalBox_bg js_toggleModalWebsite"></div>
     <div class="formModalBox_box">
         <form id="formModalSubmit" method="get" style="width:100%;">
+            <!-- hidden -->
+            <input type="hidden" name="service_info_id"  value="{{ $item->service->id }}" />
             <div class="formModalBox_box_head">Yêu cầu thiết kế Website</div>
             <div class="formModalBox_box_body">
                 <div class="formModalBox_box_body_item">
@@ -14,23 +16,30 @@
                 </div>
                 <div class="formModalBox_box_body_item">
                     <label class="required">Gói Website</label>
-                    <select id="optionWebsite" name="website" tabindex="4">
-                        <option value="1">Gói kinh doanh - 14,250,000 (đã giảm 5%)</option>
-                        <option value="2" selected>Gói cao cấp - 21,250,000 (đã giảm 15%)</option>
-                        <option value="3">Gói tùy chọn</option>
+                    <select id="optionWebsite" name="service_price_id" tabindex="3">
+                        @foreach($item->service->prices as $price)
+                            @php
+                                $option         = $price->name;
+                                $numberPrice    = (integer) $price->price_origin;
+                                $unit           = !empty($item->unit) ? ' /'.$item->unit : null;
+                                if(!empty($numberPrice)) $option .= ' - '.number_format($price->price_origin*(100-$price->sale_off)/100).$unit;
+                                if(!empty($price->sale_off)) $option .= ' (đã giảm '.$price->sale_off.'%)';
+                            @endphp 
+                            <option value="{{ $price->id }}">{{ $option }}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="formModalBox_box_body_item">
                     <label>Mã giảm giá</label>
-                    <input type="text" name="code"  tabindex="5" />
+                    <input type="text" name="code" tabindex="4" />
                 </div>
                 <div class="formModalBox_box_body_item">
                     <label>Ghi chú</label>
-                    <textarea name="customer_note" cols="3"></textarea>
+                    <textarea name="customer_note" cols="3" tabindex="5"></textarea>
                 </div>
             </div>
             <div class="formModalBox_box_footer">
-                <div class="formModalBox_box_footer_item button" tabindex="7" onClick="submitForm('formModalSubmit')">
+                <div class="formModalBox_box_footer_item button" tabindex="6" onClick="submitForm('formModalSubmit')">
                     Gửi yêu cầu
                 </div>
             </div>

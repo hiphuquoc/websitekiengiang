@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\RoutingController;
 use App\Http\Controllers\CTV\AuthCTVController;
@@ -18,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'home'])->name('main.home');
+Route::get('/cham-soc-website-'.env('LOCAL_URL'), [PageController::class, 'chamSocWebsite'])->name('main.chamSocWebsite');
 /* Xử lý trang CTV */
 Route::get('/cong-tac-vien', [RoutingController::class, 'congTacVien'])->name('main.congTacVien');
 Route::post('/registryCtv', [AuthCTVController::class, 'registryCtv'])->name('ajax.registryCtv');

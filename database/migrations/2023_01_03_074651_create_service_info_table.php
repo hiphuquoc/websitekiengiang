@@ -13,14 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('request_info', function (Blueprint $table) {
+        Schema::create('service_info', function (Blueprint $table) {
             $table->id();
-            $table->text('customer_info_id');
-            $table->integer('service_info_id');
-            $table->integer('service_price_id');
-            $table->text('code')->nullable();
-            $table->longText('note')->nullable();
-            $table->timestamps();
+            $table->integer('seo_id');
+            $table->text('name');
+            $table->text('description');
         });
     }
 
@@ -31,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        // Schema::dropIfExists('request_info');
+        // Schema::dropIfExists('service_info');
     }
 };

@@ -10,8 +10,7 @@ class RequestInfo extends Model {
     protected $table        = 'request_info';
     protected $fillable     = [
         'customer_info_id', 
-        'reference_type',
-        'reference_id',
+        'service_info_id',
         'code',
         'note'
     ];

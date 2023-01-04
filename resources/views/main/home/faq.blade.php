@@ -6,7 +6,9 @@
     <div class="container">
         <div class="faqBox_head">
             <h2 id="cau-hoi-thuong-gap-thiet-ke-website-kien-giang">Câu hỏi thường gặp</h2>
-            <div class="faqBox_head_desc">Những thông tin có lẽ bạn đang thắc mắc trước và sau Thiết kế Website</div>
+            @if(!empty($description))
+                <div class="faqBox_head_desc">{{ $description }}</div>
+            @endif
         </div>
         <div class="faqBox_body effectFadeIn">
             @foreach($faqs as $faq)

@@ -119,15 +119,16 @@ ul {
 h2 {
   font-family: $fontTitleContent;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2.2rem;
   @media(max-width: 990px){
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
     margin-bottom: 0.75rem !important;
   }
   @media(max-width: 577px){
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
     margin-bottom: 0.5rem !important;
   }
 }

@@ -13,14 +13,6 @@ class AjaxController extends Controller {
         $this->BuildInsertUpdateModel  = $BuildInsertUpdateModel;
     }
 
-    // public function loadNotice(Request $request){
-    //     $xhtml       = null;
-    //     if(!empty($request->get('type'))&&$request->get('type')=='success'){
-    //         $xhtml   = view('main.ajax.notice')->render();
-    //     }
-    //     echo $xhtml;
-    // }
-
     public function loadLoading(){
         $xhtml      = view('main.templates.loading')->render();
         echo $xhtml;
@@ -35,9 +27,9 @@ class AjaxController extends Controller {
         $insertCustomer = $this->BuildInsertUpdateModel->buildArrayTableCustomerInfo($dataForm);
         $idCustomer     = Customer::insertItem($insertCustomer);
         /* insert request_info */
-        $insertRequest  = $this->BuildInsertUpdateModel->buildArrayTableRequestInfo($dataForm, 'website', $idCustomer);
+        $insertRequest  = $this->BuildInsertUpdateModel->buildArrayTableRequestInfo($dataForm, $idCustomer);
         $idRequest      = RequestInfo::insertItem($insertRequest);
-        if($insertRequest){
+        if($idRequest){
             $xhtml      = view('main.ajax.notice')->render();
             echo $xhtml;
         }else {

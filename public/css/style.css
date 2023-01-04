@@ -52,19 +52,20 @@ ul.withIconCheck li:before {
 h2 {
   font-family: "mt", "SVN-Gilroy", sans-serif;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 2.2rem;
 }
 @media (max-width: 990px) {
   h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
     margin-bottom: 0.75rem !important;
   }
 }
 @media (max-width: 577px) {
   h2 {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
     margin-bottom: 0.5rem !important;
   }
 }
@@ -1048,6 +1049,7 @@ label.required:after {
   margin-bottom: 1.25rem;
   margin-left: -5rem;
   letter-spacing: 1px;
+  position: relative;
 }
 .priceBox_body_item_price_old {
   font-size: 1.1rem;
@@ -1059,6 +1061,61 @@ label.required:after {
   font-size: 2rem;
   font-weight: bold;
   color: red;
+}
+.priceBox_body_item_price_saleoff {
+  transform: rotate(-3deg);
+  position: absolute;
+  width: 120px;
+  top: -10px;
+  right: -50px;
+  z-index: 100;
+}
+.priceBox_body_item_price_saleoff .saleoffBox {
+  position: relative;
+}
+.priceBox_body_item_price_saleoff .saleoffBox_number {
+  position: absolute;
+  top: 45px;
+  left: 17px;
+  transform: rotate(10deg);
+  font-weight: bold;
+  font-size: 1.7rem;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
+  color: red;
+  opacity: 0.8;
+  letter-spacing: -1px;
+}
+.priceBox_body_item_price_saleoff .saleoffBox_todate {
+  transform: rotate(10deg);
+  bottom: -0.75rem;
+  position: absolute;
+  left: -1.2rem;
+  font-size: 1rem;
+  color: red;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+.priceBox_body_item_price.combo1 {
+  border: 1px solid red;
+}
+.priceBox_body_item_price.combo1 .priceBox_body_item_title h3, .priceBox_body_item_price.combo1 .priceBox_body_item_title h4 {
+  background: red;
+  color: #fff;
+}
+.priceBox_body_item_price.combo2 {
+  border: 1px solid #069A8E;
+}
+.priceBox_body_item_price.combo2 .priceBox_body_item_title h3, .priceBox_body_item_price.combo2 .priceBox_body_item_title h4 {
+  background: #069A8E;
+  color: #fff;
+}
+.priceBox_body_item_price.combo3 {
+  border: 1px solid #FFBF00;
+}
+.priceBox_body_item_price.combo3 .priceBox_body_item_title h3, .priceBox_body_item_price.combo3 .priceBox_body_item_title h4 {
+  background: #FFBF00;
+  color: #183153;
 }
 .priceBox_body_item_list {
   margin-bottom: 1.5rem;
@@ -2090,7 +2147,6 @@ label.required:after {
 }
 
 .footerBox {
-  margin-top: -30px;
   padding: 150px 0 3.5rem 0;
   background: url("/images/slide-1.jpg") no-repeat;
   background-size: 100% auto;
@@ -2143,7 +2199,15 @@ label.required:after {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
+@media (max-width: 1199px) {
+  .footerBox {
+    padding-top: 120px;
+  }
+}
 @media (max-width: 990px) {
+  .footerBox {
+    padding-top: 100px;
+  }
   .footerBox_item_title {
     font-size: 1.7rem;
     margin-bottom: 0.75rem !important;
@@ -2165,13 +2229,16 @@ label.required:after {
     margin-left: 0 !important;
   }
   .footerBox_item:not(:first-child) {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
   .footerBox_item_title {
     margin-bottom: 0.5rem;
   }
 }
 @media (max-width: 577px) {
+  .footerBox {
+    padding-top: 60px;
+  }
   .footerBox_item_title {
     font-size: 1.6rem;
     margin-bottom: 0.5rem !important;
@@ -2874,4 +2941,207 @@ label.required:after {
   padding: 10px;
   border-radius: 50%;
   transform: rotate(7deg);
+}
+
+.backgroundHead {
+  width: 100%;
+  height: 350px;
+  background-size: 100% 100%;
+}
+@media (max-width: 990px) {
+  .backgroundHead {
+    height: 50px !important;
+    background: none !important;
+  }
+}
+
+.tourViewBox {
+  position: relative;
+  width: 100%;
+  font-size: 1.05rem;
+}
+.tourViewBox_head {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.tourViewBox_head h1, .tourViewBox_head h2 {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+  font-family: "Barlow Semi Condensed", "mt", sans-serif;
+  margin-bottom: 1rem;
+}
+@media (max-width: 990px) {
+  .tourViewBox_head h1, .tourViewBox_head h2 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem !important;
+  }
+}
+@media (max-width: 766px) {
+  .tourViewBox_head h1, .tourViewBox_head h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem !important;
+  }
+}
+@media (max-width: 577px) {
+  .tourViewBox_head h1, .tourViewBox_head h2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-bottom: 0.75rem !important;
+  }
+}
+.tourViewBox_body {
+  position: relative;
+}
+.tourViewBox_body:before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px dashed #F5B500;
+}
+.tourViewBox_body_item {
+  display: flex;
+  align-items: center;
+}
+.tourViewBox_body_item_column {
+  width: 100%;
+}
+.tourViewBox_body_item_column:not(:first-child) {
+  margin-left: 80px;
+}
+.tourViewBox_body_item_column:first-child {
+  margin-right: 80px;
+}
+.tourViewBox_body_item_column_title {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+.tourViewBox_body_item_column_title:before {
+  content: "\f111";
+  position: absolute;
+  bottom: -20px;
+  left: -89px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #069A8E;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+.tourViewBox_body_item_column_title:after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 90px);
+  height: 2px;
+  bottom: -7px;
+  left: -89px;
+  border-bottom: 1px solid #069A8E;
+}
+.tourViewBox_body_item_column_title h2, .tourViewBox_body_item_column_title h3 {
+  font-size: 1.6rem;
+  line-height: 2.2;
+  font-weight: bold;
+  font-family: "mt", "SVN-Gilroy", sans-serif;
+  margin-bottom: 0 !important;
+  color: #069A8E;
+}
+.tourViewBox_body_item:nth-child(2n+0) {
+  flex-direction: row-reverse;
+}
+.tourViewBox_body_item:nth-child(2n+0) .tourViewBox_body_item_column:not(:first-child) {
+  margin-left: 0 !important;
+  margin-right: 80px !important;
+}
+.tourViewBox_body_item:nth-child(2n+0) .tourViewBox_body_item_column:first-child {
+  margin-right: 0 !important;
+  margin-left: 80px !important;
+}
+.tourViewBox_body_item:nth-child(2n+0) .tourViewBox_body_item_column_title:before {
+  left: unset !important;
+  right: -91px;
+}
+.tourViewBox_body_item:nth-child(2n+0) .tourViewBox_body_item_column_title:after {
+  left: unset !important;
+  right: -91px;
+}
+@media (max-width: 1199px) {
+  .tourViewBox_body_item:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+  .tourViewBox_body_item_column:not(:first-child) {
+    margin-left: 50px;
+  }
+  .tourViewBox_body_item_column:first-child {
+    margin-right: 50px;
+  }
+  .tourViewBox_body_item_column_title {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+  }
+  .tourViewBox_body_item_column_title:before {
+    bottom: -20px;
+    left: -59px;
+  }
+  .tourViewBox_body_item_column_title:after {
+    bottom: -7px;
+    left: -59px;
+  }
+  .tourViewBox_body_item:nth-child(2n+0) .tourViewBox_body_item_column:not(:first-child) {
+    margin-right: 50px !important;
+  }
+  .tourViewBox_body_item:nth-child(2n+0) .tourViewBox_body_item_column:first-child {
+    margin-left: 50px !important;
+  }
+  .tourViewBox_body_item:nth-child(2n+0) .tourViewBox_body_item_column_title:before {
+    right: -61px;
+  }
+  .tourViewBox_body_item:nth-child(2n+0) .tourViewBox_body_item_column_title:after {
+    right: -61px;
+  }
+}
+@media (max-width: 990px) {
+  .tourViewBox_body_item_column_title h2 {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+  }
+}
+@media (max-width: 577px) {
+  .tourViewBox_body::before, .tourViewBox_body::after {
+    display: none;
+  }
+  .tourViewBox_body_item {
+    flex-direction: column-reverse !important;
+  }
+  .tourViewBox_body_item:nth-child(2n+0) {
+    flex-direction: column-reverse !important;
+  }
+  .tourViewBox_body_item_column {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .tourViewBox_body_item_column:not(:first-child) {
+    margin-bottom: 1rem;
+  }
+  .tourViewBox_body_item_column_title {
+    padding-bottom: 0 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .tourViewBox_body_item_column_title h2 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+  .tourViewBox_body_item_column_title:before, .tourViewBox_body_item_column_title:after {
+    display: none;
+  }
+  .tourViewBox_body_item:nth-child(2n+0) .tourViewBox_body_item_column:not(:first-child) {
+    margin-right: 0 !important;
+  }
+  .tourViewBox_body_item:nth-child(2n+0) .tourViewBox_body_item_column:first-child {
+    margin-left: 0 !important;
+  }
 }

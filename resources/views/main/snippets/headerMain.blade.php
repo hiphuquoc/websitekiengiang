@@ -1,26 +1,45 @@
 <div class="headerMain">
    <div class="container">
       <div class="headerMain_logo">
-         <a href="/" class="logoMain" aria-label="Trang chủ thiết kế Website Kiên Giang">
-               <h1 style="display:none;">Trang chủ Thiết kế Website Kiên Giang</h1>
+         <a href="/" class="logoMain" aria-label="Trang chủ thiết kế Website {{ env('LOCAL_VN') }}">
+            @php
+               $titlePage = null;
+               if(!empty($item)&&$item->slug==null) $titlePage = '<h1 style="display:none;">Trang chủ Thiết kế Website '.env('LOCAL_VN').'</h1>';
+            @endphp
+            {!! $titlePage !!}
          </a>
       </div>
       <!-- header main desktop -->
       <div class="hide-990 headerMain_item">
+         @php
+            $listMenu = [
+               [
+                  'name'         => 'Thiết kế website',
+                  'url'          => '/',
+                  'label'        => 'Thiết kế Website '.env('LOCAL_VN')
+               ],
+               [
+                  'name'        => 'Chăm sóc website',
+                  'url'          => '/cham-soc-website-'.env('LOCAL_URL'),
+                  'label'        => 'Chăm sóc Website '.env('LOCAL_VN')
+               ]
+            ];
+         @endphp
          <ul style="justify-content:flex-end;">
+            @foreach($listMenu as $itemMenu)
+               @php
+                   $active = null;
+                   if(Request::getRequestUri()==$itemMenu['url']) $active = 'active';
+               @endphp
+               <li>
+                  <div>
+                     <a href="{{ $itemMenu['url'] }}" class="{{ $active }}" title="{{ $itemMenu['label'] }}" aria-label="{{ $itemMenu['label'] }}">{{ $itemMenu['name'] }}</a>
+                  </div>
+               </li>
+            @endforeach
             <li>
                <div>
-                  <a href="/" class="active" title="thiết kế website kiên giang" aria-label="Thiết kế Website Kiên Giang">Thiết kế Website</a>
-               </div>
-            </li>
-            {{-- <li>
-               <div>
-                  <a href="#" title="chăm sóc website kiên giang">Chăm sóc Website</a>
-               </div>
-            </li> --}}
-            <li>
-               <div>
-                  <a href="#lien-he-thiet-ke-website-kien-giang" title="liên hệ thiết kế website kiên giang">Liên hệ</a>
+                  <a href="#lien-he-thiet-ke-website-{{ env('LOCAL_URL') }}" title="liên hệ thiết kế website {{ env('LOCAL_VN') }}">Liên hệ</a>
                </div>
             </li>
             {{-- <li>
@@ -30,7 +49,7 @@
                <div class="normalMenu" style="margin-right:1.5rem;right:0;">
                   <ul>
                      <li>
-                        <a href="/lien-he-Website Kiên Giang" title="Liên hệ Website Kiên Giang">
+                        <a href="/lien-he-Website {{ env('LOCAL_VN') }}" title="Liên hệ Website {{ env('LOCAL_VN') }}">
                            <div>Liên hệ</div>
                         </a>
                      </li>
@@ -46,4 +65,4 @@
          </div>
       </div>
    </div>
- </div>
+</div>

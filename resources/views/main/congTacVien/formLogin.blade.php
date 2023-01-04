@@ -11,7 +11,7 @@
                     </div>
                     <div class="formLogin_text">
                         <div class="formLogin_text_title">Chào mừng bạn! 👋</div>
-                        <div class="formLogin_text_description">Đây khu vực dành cho Cộng tác viên. Vui lòng đăng nhập trước khi thao tác!</div>
+                        <div class="formLogin_text_description">Bạn đang truy cập hệ thống dành cho Cộng tác viên. Vui lòng đăng nhập trước khi thao tác!</div>
                     </div>
                     <div class="formLogin_form">
                         <div class="formLogin_form_item">

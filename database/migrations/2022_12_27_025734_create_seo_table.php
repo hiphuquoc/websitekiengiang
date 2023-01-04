@@ -25,7 +25,8 @@ return new class extends Migration
             $table->integer('topic')->nullable();
             $table->text('seo_title')->nullable();
             $table->text('seo_description')->nullable();
-            $table->text('slug');
+            $table->text('slug')->nullable();
+            $table->text('slug_full')->nullable();
             $table->string('type', '100');
             $table->string('rating_author_name', 50)->nullable();
             $table->string('rating_author_star', 6)->default(5);

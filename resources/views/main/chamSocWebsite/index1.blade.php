@@ -53,74 +53,29 @@
         <!-- === START:: Header Top === -->
         @include('main.snippets.headerTop')
         <!-- === END:: Header Top === -->
-        @include('main.home.slide')
+        
         <div id="js_contentBox">
-            <!-- Về chúng tôi -->
-            <div class="sectionBox">
+            @include('main.chamSocWebsite.backgroundHead', ['url' => '/storage/images/banner-cham-soc-website.png'])
+
+            <!-- Lợi ích dịch vụ chăm sóc website -->
+            <div class="sectionBox" style="background:#fff url('/storage/images/background-inside-1.png') no-repeat;background-size: 100% auto;">
                 <div class="container">
-                    @include('main.home.aboutUs')
+                    @include('main.chamSocWebsite.tourView')
                 </div>
             </div>
-            
-            <!-- Nên chọn website chất lượng hay giá rẻ -->
-            <div class="sectionBox backgroundGradient">
-                <div class="container">
-                    @include('main.home.aboutQuanlity')
-                </div>
-            </div>
-            <!-- Giao diện đẹp chuẩn Ux/Ui có ý nghĩa như thế nào -->
-            <div class="sectionBox" style="background:rgb(0,85,85);">
-                <div class="container">
-                    @include('main.home.aboutTemplate')
-                </div>
-            </div>
-            <!-- Lợi ích website chuẩn Seo -->
-            <div class="sectionBox" style="background:#fff;">
-                <div class="container">
-                    @include('main.home.aboutSeo')
-                </div>
-            </div>
-            <!-- Tôi ưu -->
-            <div class="sectionBox" style="background:linear-gradient(100deg, rgb(0,85,85) 70%, #069A8E 30%);">
-                <div class="container">
-                    @include('main.home.aboutSpeed')
-                </div>
-            </div>
-            <!-- Dễ sử dụng và mở rộng -->
-            <div class="sectionBox" style="background:#fff;">
-                <div class="container">
-                    @include('main.home.aboutExplain')
-                </div>
-            </div>
-            {{-- <!-- Dịch vụ Thiết kế website Kiên Giang có gì đặc biệt -->
-            <div class="sectionBox backgroundImage1">
-                @include('main.home.special')
-            </div> --}}
-            <!-- Dịch vụ Thiết kế website Kiên Giang có gì đặc biệt -->
-            <div class="sectionBox">
-                @include('main.home.special')
-            </div>
-            <!-- Quy trình thiết kế website -->
-            <div class="sectionBox" style="background:linear-gradient(245deg, #EDF2F7 55%, #ffffd1 5%);">
-                @include('main.home.step')
-            </div>
-            <!-- Bảng giá Thiết kế website Kiên Giang -->
+
+            <!-- Bảng giá chăm sóc website kiên giang -->
             <div class="sectionBox" style="background:#ffffd1;">
                 @include('main.home.price')
             </div>
+
             <!-- Câu hỏi thường gặp -->
             <div class="sectionBox">
                 @include('main.home.faq', [
-                    'description'   => 'Những thông tin có lẽ bạn đang thắc mắc trước và sau khi Thiết kế Website',
+                    'description'   => 'Những thông tin có lẽ bạn đang thắc mắc về dịch vụ Chăm sóc Website '.ucwords(env('LOCAL_VN')),
                     'faqs'          => $item->faqs
                 ])
             </div>
-            {{-- <!-- Nội dung -->
-            <div class="sectionBox withBorder">
-                <div class="container">
-                    @include('main.home.content')
-                </div>
-            </div> --}}
 
             <!-- tocContent main -->
             <div id="tocContentMain"></div>
@@ -129,7 +84,10 @@
 @endsection
 @push('modal')
     <!-- Form -->
-    @include('main.home.form', compact('item'))
+    @include('main.home.form', [
+        'prices'    => $item->service->prices,
+        'type'      => 'care_website'
+    ])
 @endpush
 @push('bottom')
     <!-- === START:: Zalo Ring === -->
