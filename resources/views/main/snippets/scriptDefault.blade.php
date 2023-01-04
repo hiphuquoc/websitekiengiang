@@ -198,7 +198,7 @@
                         let scrollNow   = $(document).scrollTop();
                         // let minScroll   = parseInt(heightE + positionE);
                         // let maxScroll   = parseInt(heightB + positionB - heightFooter);
-                        if(scrollNow > 500&& $(window).width()>990){ 
+                        if(scrollNow > 500){ 
                             $('.tocFixedIcon').css('display', 'block');
                         }else {
                             $('.tocFixedIcon').css('display', 'none');
@@ -244,4 +244,19 @@
             });
         });
     });
+    /* toggle menu mobile */
+    function toggleMenuMobile(idElement){
+            const element   = $('#'+idElement);
+            const displayE  = element.css('display');
+            if(displayE=='none'){
+                /* hiển thị */
+                element.css('display', 'flex');
+                $('body').css('overflow', 'hidden');
+                $('#js_blurBackground').addClass('blurBackground');
+            }else {
+                element.css('display', 'none');
+                $('body').css('overflow', 'unset');
+                $('#js_blurBackground').removeClass('blurBackground');
+            }
+        }
 </script>
