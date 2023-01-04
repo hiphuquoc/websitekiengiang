@@ -2440,7 +2440,7 @@ $height_headerMain : 55px;
                 &_title {
                     position: relative;
                     margin-bottom: 2.5rem;
-                    padding-bottom: 1.5rem;
+                    padding-bottom: 1rem;
                     &:before {
                         content: '\f111';
                         position: absolute;
@@ -2467,7 +2467,7 @@ $height_headerMain : 55px;
                         font-family: $fontTitleContent;
                         margin-bottom: 0 !important;
                         color: $colorLv2;
-                        
+
                     }
                 }
             }
@@ -2511,7 +2511,7 @@ $height_headerMain : 55px;
                     }
                     &_title {
                         margin-bottom: 2rem;
-                        padding-bottom: 1rem;
+                        padding-bottom: 0.75rem;
                         &:before {
                             bottom: -20px;
                             left: -59px;

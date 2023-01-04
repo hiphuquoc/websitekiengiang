@@ -3020,7 +3020,7 @@ label.required:after {
 .tourViewBox_body_item_column_title {
   position: relative;
   margin-bottom: 2.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 .tourViewBox_body_item_column_title:before {
   content: "\f111";
@@ -3081,7 +3081,7 @@ label.required:after {
   }
   .tourViewBox_body_item_column_title {
     margin-bottom: 2rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.75rem;
   }
   .tourViewBox_body_item_column_title:before {
     bottom: -20px;
