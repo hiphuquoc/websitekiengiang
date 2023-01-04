@@ -58,12 +58,6 @@
             </li> --}}
          </ul>
       </div>
-      <!-- header main mobile -->
-      {{-- <div class="show-990 headerMain_item" onClick="toggleMenuMobile('navMobile')">
-         <div style="padding:0.5rem;">
-            Dịch vụ
-         </div>
-      </div> --}}
       <div class="show-990 headerMain_item" onClick="toggleMenuMobile('navMobile')">
          <div style="padding:0.5rem;">
             <i class="fa-solid fa-bars" style="font-size:1.4rem;margin-top:0.25rem;"></i>

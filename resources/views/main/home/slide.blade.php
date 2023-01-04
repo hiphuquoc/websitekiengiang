@@ -54,32 +54,50 @@
     <div class="slideBox_bottom">
         <img src="/images/bg-wave-1.png" alt="Thiết kế website kiên giang" title="Thiết kế website kiên giang" />
     </div>
-    <video class="slideBox_video" type="video/mp4" autoplay muted loop><source src="{{ Storage::url('videos/background-slide-19.mp4') }}" title="thiết kế website kiên giang">Video thiết kế website kiên giang</video>
-        {{-- <video class="slideBox_video" type="video/mp4" autoplay muted loop><source src="/videos/merry-christmas.mov" title="thiết kế website kiên giang">Video thiết kế website kiên giang</video> --}}
+    <video id="js_loadVideoBackground" class="slideBox_video" type="video/mp4" autoplay muted loop>
+        <!-- js loadVideoBackground -->
+    </video>
 </div>
 @push('scriptCustom')
 <script type="text/javascript">
-    /* ẩn trước phần tử effect dropDown */
-    const elementDropdown   = $('#slideEffectDropdown');
-    const marginTopReal     = parseInt(elementDropdown.css('margin-top'));
-    elementDropdown.css({
-        'margin-top'    : (marginTopReal - 200)+'px'
-    });
-    /* hiệu ứng rơi xuống */
-    setTimeout(() => {
-        elementDropdown.animate({
-            'margin-top'    : marginTopReal+'px',
-            'opacity'       : 1
-        }, 800, function(){
-            slideEffectFadeIn();
+    $(window).ready(function(){
+        
+        /* hiệu ứng rơi xuống */
+        const elementDropdown   = $('#slideEffectDropdown');
+        const marginTopReal     = parseInt(elementDropdown.css('margin-top'));
+        elementDropdown.css({
+            'margin-top'    : (marginTopReal - 200)+'px'
         });
-    }, 300);
+        setTimeout(() => {
+            elementDropdown.animate({
+                'margin-top'    : marginTopReal+'px',
+                'opacity'       : 1
+            }, 800, function(){
+                slideEffectFadeIn();
+                setTimeout(function(){
+                    loadVideoBackground();
+                }, 1000);                
+            });
+        }, 300);
+    })
+    // /* ẩn trước phần tử effect dropDown */
+    // const elementDropdown   = $('#slideEffectDropdown');
+    // const marginTopReal     = parseInt(elementDropdown.css('margin-top'));
+    // elementDropdown.css({
+    //     'margin-top'    : (marginTopReal - 200)+'px'
+    // });
+    
     /* hiệu ứng fade in */
     function slideEffectFadeIn(){
         const elementFladeIn    = $('#slideEffectFadeIn');
         elementFladeIn.animate({
             opacity : 1,
         }, 800);
+    }
+    /* thay background image bằng video */
+    function loadVideoBackground(){
+        const sourceVideo = '<source src="/storage/videos/background-slide-19.mp4" title="thiết kế website kiên giang">Video thiết kế website kiên giang';
+        $('#js_loadVideoBackground').html(sourceVideo);
     }
 </script>
 @endpush

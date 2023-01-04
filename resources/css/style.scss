@@ -269,42 +269,6 @@ $height_headerMain : 55px;
                 }
             }
         }
-        // &_right {
-        //     position: relative;
-        //     flex: 0 0 500px;
-        //     height: 500px;
-        //     .animation_1 {
-        //         width: 200px;
-        //         height: 200px;
-        //         position: absolute;
-        //         top: 20%;
-        //         left: 0;
-        //     }
-        //     .animation_2 {
-        //         width: 200px;
-        //         height: 200px;
-        //         position: absolute;
-        //         top: 60%;
-        //         left: 25px;
-        //         z-index: 1;
-        //     }
-        //     .animation_3 {
-        //         width: 250px;
-        //         height: 250px;
-        //         position: absolute;
-        //         top: calc(50% + 50px);
-        //         right: -80px;
-        //         z-index: 1;
-        //     }
-        //     .animation_4 {
-        //         width: 450px;
-        //         height: 450px;
-        //         position: absolute;
-        //         top: 50%;
-        //         right: 0;
-        //         transform: translateY(-50%);
-        //     }
-        // }
     }
     &_bottom {
         width: 100%;
@@ -313,6 +277,8 @@ $height_headerMain : 55px;
         left: 0;
     }
     &_video {
+        background: url('/storage/images/background-image-slide-500.jpg') no-repeat;
+        background-size: 100% 100%;
         position: absolute;
         top: 0;
         left: 0;

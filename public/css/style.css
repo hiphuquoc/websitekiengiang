@@ -644,6 +644,8 @@ label.required:after {
   left: 0;
 }
 .slideBox_video {
+  background: url("/storage/images/background-image-slide-500.jpg") no-repeat;
+  background-size: 100% 100%;
   position: absolute;
   top: 0;
   left: 0;
