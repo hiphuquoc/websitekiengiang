@@ -95,7 +95,7 @@
     /* thay background image bằng video */
     function loadVideoBackground(){
         $.ajax({
-            url: 'https://websitekiengiang.test/storage/videos/background-slide-19.mp4',
+            url: '/storage/videos/background-slide-19.mp4',
             type: 'GET',
             xhr: function() {
                 var xhr = new window.XMLHttpRequest();
