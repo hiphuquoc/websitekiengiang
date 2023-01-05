@@ -1,9 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/public_html/eqeqmgjz/websitekiengiang.com/
+    - export DEPLOYPATH=/home/eqeqmgjz/public_html/websitekiengiang.com/
     - /bin/cp -R * $DEPLOYPATH
-    - export DEPLOYPATH=/home/public_html/eqeqmgjz/websitesoctrang.com/
+    - export DEPLOYPATH=/home/eqeqmgjz/public_html/websitesoctrang.com/
     - /bin/cp -R * $DEPLOYPATH
     # - /bin/cp /app $DEPLOYPATH
     # - /bin/cp /bootstrap $DEPLOYPATH
