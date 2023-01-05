@@ -4,7 +4,13 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\AjaxController;
 use App\Http\Controllers\RoutingController;
+
 use App\Http\Controllers\CTV\AuthCTVController;
+
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Admin\RequestController;
+use App\Http\Controllers\Admin\SettingController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +26,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'home'])->name('main.home');
 Route::get('/cham-soc-website-'.env('LOCAL_URL'), [PageController::class, 'chamSocWebsite'])->name('main.chamSocWebsite');
+/* admin */
+// Route::get('/createUser', [LoginController::class, 'create'])->name('admin.createUser');
+Route::get('/admin', [LoginController::class, 'loginForm'])->name('admin.loginForm');
+Route::post('/loginAdmin', [LoginController::class, 'loginAdmin'])->name('admin.loginAdmin');
+Route::middleware(['auth'])->group(function () {
+    Route::prefix('request')->group(function(){
+        Route::get('/list', [RequestController::class, 'list'])->name('admin.request.list');
+    });
+    /* setting */
+    Route::prefix('setting')->group(function(){
+        Route::get('/view', [SettingController::class, 'view'])->name('admin.setting.view');
+    });
+});
 /* Xử lý trang CTV */
 Route::get('/cong-tac-vien', [RoutingController::class, 'congTacVien'])->name('main.congTacVien');
 Route::post('/registryCtv', [AuthCTVController::class, 'registryCtv'])->name('ajax.registryCtv');

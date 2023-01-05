@@ -11,7 +11,9 @@ class BuildInsertUpdateModel {
             $result['customer_info_id']         = $customerId;
             $result['service_info_id']          = $data['service_info_id'];
             $result['service_price_id']         = $data['service_price_id'];
-            $result['code']                     = $data['code'] ?? null;
+            $result['promotion']                = $data['promotion'] ?? null;
+            $result['total']                    = $data['total'];
+            $result['code']                     = strtolower($data['code']) ?? null;
             $result['note']                     = $data['customer_note'] ?? null;
         }
         return $result;

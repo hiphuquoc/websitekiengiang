@@ -10,9 +10,9 @@
 <link rel="shortcut icon" href="/images/svg/favicon.ico" type="image/x-icon">
 
 <!-- BEGIN: Custom CSS-->
-<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css?'.time()) }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/ring.css?'.time()) }}">
-<link rel="stylesheet" type="text/css" href="{{ asset('css/loading.css?'.time()) }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/sources/main/css/style.css?'.time()) }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/sources/main/css/ring.css?'.time()) }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('/sources/main/css/loading.css?'.time()) }}">
 {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 <!-- END: Custom CSS-->
 

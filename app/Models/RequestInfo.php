@@ -30,4 +30,16 @@ class RequestInfo extends Model {
     public function customer() {
         return $this->hasOne(\App\Models\Customer::class, 'id', 'customer_info_id');
     }
+
+    public function service() {
+        return $this->hasOne(\App\Models\Service::class, 'id', 'service_info_id');
+    }
+
+    public function price() {
+        return $this->hasOne(\App\Models\ServicePrice::class, 'id', 'service_price_id');
+    }
+
+    public function congTacVien() {
+        return $this->hasOne(\App\Models\Ctv::class, 'code', 'code');
+    }
 }
