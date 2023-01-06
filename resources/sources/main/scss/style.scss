@@ -769,7 +769,8 @@ $height_headerMain : 55px;
         .highLight {
             font-size: 1.2rem;
             color: $colorLv2;
-            font-weight: 600;
+            font-weight: 700;
+            font-family: $fontText !important;
         }
     }
     @media(max-width: 1023px){

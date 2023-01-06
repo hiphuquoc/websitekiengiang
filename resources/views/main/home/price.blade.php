@@ -20,9 +20,9 @@
                         @if(!empty((integer) $item->price_origin))
                             @php
                                 $unit = null;
-                                if(!empty($item->unit)) $unit = ' /'.$item->unit;
+                                if(!empty($item->unit)) $unit = ' <span class="highLight" style="color:#333;">/'.$item->unit.'</span>';
                             @endphp
-                            <div class="priceBox_body_item_price_new">{{ number_format($item->price_origin*(100-$item->sale_off)/100).$unit }}</div>
+                            <div class="priceBox_body_item_price_new">{!! number_format($item->price_origin*(100-$item->sale_off)/100).$unit !!}</div>
                         @else 
                             <div class="priceBox_body_item_price_new">{{ $item->price_origin }}</div>
                         @endif

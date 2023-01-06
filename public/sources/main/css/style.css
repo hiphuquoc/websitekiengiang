@@ -1192,7 +1192,8 @@ label.required:after {
 .priceBox_body .highLight {
   font-size: 1.2rem;
   color: #069A8E;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: "Montserrat Alternates", "mt", "SVN-Gilroy Bold", serif !important;
 }
 @media (max-width: 1023px) {
   .priceBox_body {
