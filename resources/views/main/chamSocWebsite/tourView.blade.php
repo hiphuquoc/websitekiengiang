@@ -27,7 +27,7 @@
         ],
         [
             'title'         => 'Tiết kiệm chi phí',
-            'description'   => 'Sử dụng dịch vụ <strong>Chăm sóc Website toàn diện</strong> có thể giúp bạn tiết kiệm chi phí rất nhiều so với việc thuê nhân viên quản lý website, nhân viên thiết kế, nhân viên content, vv. Bạn cũng không cần phải lo lắng về các khoản phí như lương, thưởng, bảo hiểm, hiếu hỉ và các khoản chi phí khác liên quan đến việc đào tạo, nâng cao trình độ nhân viên.',
+            'description'   => 'Sử dụng dịch vụ <strong>Chăm sóc Website toàn diện</strong> có thể giúp bạn tiết kiệm chi phí rất nhiều so với việc thuê nhân viên quản lý website, nhân viên thiết kế, nhân viên content, vv. Bạn cũng không cần phải lo lắng về các khoản phí như lương, thưởng, bảo hiểm, hiếu hỉ và các khoản chi phí khác liên quan đến việc đào tạo, nâng cao trình độ nhân viên. Và thay vì phải thuê một đội để có thể làm tất cả các việc trên bạn chỉ phải tốn chi phí chưa bằng 1 nhân viên.',
             'img'           => '/storage/images/dich-vu-cham-soc-website-8.png'
         ],
         [
