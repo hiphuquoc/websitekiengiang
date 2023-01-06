@@ -2,6 +2,16 @@
     <!-- === START:: Header Main === -->
         @include('main.snippets.headerMain')
     <!-- === END:: Header Main === -->
+    <div class="backgroundHead_content">
+        <div class="container">
+            <div class="backgroundHead_content_title">
+                Đột phá thu nhập
+            </div>
+            <div class="backgroundHead_content_textBox">
+                Cùng Website Kiên Giang 
+            </div>
+        </div>
+    </div>
 </div>
 @push('scriptCustom')
 	<script type="text/javascript">

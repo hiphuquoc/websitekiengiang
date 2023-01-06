@@ -162,9 +162,9 @@ $height_headerMain : 55px;
 }
 .logoMain {
     display: flex;
-    width: 195px;
+    width: 170px;
     height: 35px;
-    background: url('/storage/images/logo-website-kien-giang-fff.png') no-repeat;
+    background: url('/storage/images/logo-website-kien-giang-fff-290x60.png') no-repeat;
     background-size: 100% 100%;
     @media(max-width: 990px){
         width: 165px;
@@ -2247,7 +2247,7 @@ $height_headerMain : 55px;
                 font-weight: bold;
                 letter-spacing: 0.5px;
                 h2, h3 {
-                    line-height: 2.5rem;
+                    // line-height: 2.5rem;
                 }
             }
             &_body {
@@ -2307,7 +2307,7 @@ $height_headerMain : 55px;
     @media(max-width: 577px){
         &_right {
             &_form {
-                padding: 0.5rem 1rem 1rem;
+                padding: 1rem;
             }
         }
     }
@@ -2361,9 +2361,70 @@ $height_headerMain : 55px;
     width: 100%;
     height: 350px;
     background-size: 100% 100%;
+    position: relative;
+    &_content {
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 100%;
+        &_title {
+            color: $colorLv4;
+            font-family: $fontTitle;
+            font-size: 4rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 2.5rem;
+        }
+        &_textBox {
+            background: #fff;
+            font-size: 1.4rem;
+            font-family: $fontTitleContent;
+            padding: 0.5rem 1.5rem;
+            display: inline-block;
+            border-radius: 100px;
+            font-weight: bold;
+        }
+    }
+    @media(max-width: 1499px){
+        &_content {
+            &_title {
+                font-size: 3.5rem;
+                margin-bottom: 2.25rem;
+            }
+            &_textBox {
+                font-size: 1.35rem;
+            }
+        }
+    }
+    @media(max-width: 1399px){
+        &_content {
+            &_title {
+                font-size: 3.25rem;
+                margin-bottom: 2rem;
+            }
+            &_textBox {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    @media(max-width: 1199px){
+        &_content {
+            &_title {
+                font-size: 3rem;
+                margin-bottom: 1.75rem;
+            }
+            &_textBox {
+                font-size: 1.25rem;
+            }
+        }
+    }
     @media(max-width: 990px){
         height: 50px !important;
         background: none !important;
+        &_content {
+            display: none;
+        }
     }
 }
 

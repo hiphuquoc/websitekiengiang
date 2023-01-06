@@ -1,4 +1,4 @@
-<div class="formCTVBox">
+<div  id="form-dang-ky-cong-tac-vien" class="formCTVBox">
     <div class="formCTVBox_left">
         <h2>Lời ngỏ!</h2> 
         <p>
@@ -83,7 +83,7 @@
         <li><strong>Tài khoản Ngân hàng</strong> (dùng để chi trả hoa hồng)</li> 
     </ul>
     <p>
-        Bạn có thể đăng ký bằng cách điền đầy đủ thông tin <a href="#js_loadNotice_write" style="font-weight:bold;">tại đây</a>!
+        Bạn có thể đăng ký bằng cách điền đầy đủ thông tin <a href="#form-dang-ky-cong-tac-vien" style="font-weight:bold;">tại đây</a>!
     </p>
     <div>Sau khi trở thành Ctv của Website Kiên Giang, chúng tôi sẽ cung cấp cho bạn:</div>
     <ul class="withIconCheck">
@@ -106,7 +106,7 @@
 
 <h2>Cách tính hoa hồng</h2>
 <p>
-    <strong style="color:red;">Hoa hồng 20%</strong> trên tổng giá trị hợp đồng.<br/>
+    <strong style="color:red;">Hoa hồng 20%</strong> trên tổng giá trị hợp đồng (áp dụng tất cả sản phẩm /dịch vụ đang có trên <a href="https://websitekiengiang.com">https://websitekiengiang.com</a>).<br/>
     <strong style="color:red;">Hoa hồng cấp dưới 2%</strong> trên tổng giá trị hợp đồng và <strong>áp dụng không quá 3 cấp</strong>.<br/>
     <em><strong>Ví dụ cụ thể</strong>: A giới thiệu B tham gia chương trình Ctv, B giới thiệu C. Nếu C giới thiệu thành công khách hàng chốt hợp đồng thì C được hưởng 20%, B được hưởng 2% và A được hưởng 2%.</em>
 </p>

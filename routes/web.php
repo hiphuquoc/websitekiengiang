@@ -9,6 +9,7 @@ use App\Http\Controllers\CTV\AuthCTVController;
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Admin\RequestController;
+use App\Http\Controllers\Admin\CongtacvienController;
 use App\Http\Controllers\Admin\SettingController;
 
 use Illuminate\Support\Facades\Route;
@@ -31,8 +32,13 @@ Route::get('/cham-soc-website-'.env('LOCAL_URL'), [PageController::class, 'chamS
 Route::get('/admin', [LoginController::class, 'loginForm'])->name('admin.loginForm');
 Route::post('/loginAdmin', [LoginController::class, 'loginAdmin'])->name('admin.loginAdmin');
 Route::middleware(['auth'])->group(function () {
+    /* request service */
     Route::prefix('request')->group(function(){
         Route::get('/list', [RequestController::class, 'list'])->name('admin.request.list');
+    });
+    /* cộng tác viên */
+    Route::prefix('congTacVien')->group(function(){
+        Route::get('/list', [CongtacvienController::class, 'list'])->name('admin.congTacVien.list');
     });
     /* setting */
     Route::prefix('setting')->group(function(){
