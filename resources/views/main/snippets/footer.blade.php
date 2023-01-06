@@ -1,4 +1,4 @@
-<div id="lien-he-thiet-ke-website-kien-giang" class="footerBox">
+<div id="lien-he-thiet-ke-website-{{ env('LOCAL_URL') }}" class="footerBox">
     <div class="footerBox_wave">
         <img src="/storage/images/bg-wave-2.png" alt="Thiết kế Website Kiên Giang" title="Thiết kế Website Kiên Giang" />
     </div>
